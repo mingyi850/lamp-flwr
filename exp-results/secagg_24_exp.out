@@ -1,0 +1,881 @@
+INFO flwr 2023-12-18 10:34:57,922 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=100, round_timeout=None)
+INFO flwr 2023-12-18 10:34:57,942 | app.py:176 | Flower ECE: gRPC server running (100 rounds), SSL is disabled
+INFO flwr 2023-12-18 10:34:57,942 | server.py:89 | Initializing global parameters
+INFO flwr 2023-12-18 10:34:57,942 | server.py:276 | Requesting initial parameters from one random client
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.weight', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.weight', 'cls.seq_relationship.weight', 'fit_denses.4.bias', 'fit_denses.4.weight', 'fit_denses.1.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.1.bias', 'cls.predictions.decoder.weight', 'fit_denses.6.weight', 'fit_denses.6.bias', 'cls.seq_relationship.bias', 'fit_denses.2.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.2.bias', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.0.weight', 'fit_denses.5.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.weight', 'cls.predictions.bias', 'fit_denses.2.bias', 'fit_denses.6.bias', 'fit_denses.3.bias', 'cls.seq_relationship.weight', 'fit_denses.6.weight', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.3.weight', 'cls.seq_relationship.bias', 'fit_denses.0.weight', 'fit_denses.1.weight', 'cls.predictions.decoder.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'fit_denses.1.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.bias', 'fit_denses.2.bias', 'fit_denses.6.weight', 'fit_denses.1.bias', 'cls.seq_relationship.weight', 'fit_denses.4.weight', 'fit_denses.6.bias', 'fit_denses.1.weight', 'fit_denses.3.bias', 'fit_denses.3.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.5.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.0.bias', 'fit_denses.4.weight', 'fit_denses.2.bias', 'fit_denses.2.weight', 'fit_denses.3.weight', 'cls.predictions.bias', 'fit_denses.5.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.weight', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.3.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.4.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'fit_denses.6.bias', 'fit_denses.3.weight', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.1.weight', 'fit_denses.0.bias', 'fit_denses.2.weight', 'fit_denses.4.weight', 'fit_denses.3.bias', 'fit_denses.1.bias', 'fit_denses.0.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.bias', 'fit_denses.2.bias', 'cls.predictions.bias', 'fit_denses.0.weight', 'fit_denses.1.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.6.weight', 'fit_denses.3.weight', 'fit_denses.1.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.4.weight', 'cls.predictions.decoder.weight', 'fit_denses.0.bias', 'fit_denses.6.bias', 'cls.seq_relationship.weight', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight', 'cls.seq_relationship.bias', 'fit_denses.4.bias', 'fit_denses.5.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'cls.predictions.bias', 'fit_denses.5.bias', 'fit_denses.4.bias', 'fit_denses.0.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.weight', 'fit_denses.6.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.2.weight', 'cls.seq_relationship.bias', 'fit_denses.1.bias', 'fit_denses.5.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.0.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'fit_denses.3.bias', 'fit_denses.3.weight', 'fit_denses.4.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'fit_denses.5.bias', 'fit_denses.3.weight', 'fit_denses.6.weight', 'cls.predictions.decoder.weight', 'fit_denses.1.weight', 'fit_denses.2.bias', 'cls.seq_relationship.weight', 'fit_denses.4.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.2.weight', 'fit_denses.6.bias', 'fit_denses.3.bias', 'fit_denses.4.bias', 'fit_denses.5.weight', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'fit_denses.1.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'fit_denses.6.weight', 'fit_denses.3.bias', 'fit_denses.5.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'fit_denses.5.bias', 'fit_denses.3.weight', 'fit_denses.4.weight', 'fit_denses.0.bias', 'fit_denses.6.bias', 'fit_denses.4.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.weight', 'fit_denses.2.bias', 'cls.seq_relationship.bias', 'fit_denses.4.bias', 'fit_denses.0.weight', 'fit_denses.6.weight', 'cls.seq_relationship.weight', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.1.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight', 'cls.predictions.decoder.weight', 'fit_denses.0.bias', 'fit_denses.3.bias', 'fit_denses.6.bias', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.1.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.weight', 'fit_denses.0.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.6.bias', 'fit_denses.3.weight', 'fit_denses.1.weight', 'fit_denses.6.weight', 'fit_denses.3.bias', 'fit_denses.1.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.weight', 'fit_denses.5.weight', 'fit_denses.4.weight', 'fit_denses.6.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.weight', 'cls.seq_relationship.weight', 'fit_denses.4.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'cls.seq_relationship.bias', 'fit_denses.1.weight', 'fit_denses.0.weight', 'fit_denses.6.weight', 'fit_denses.5.bias', 'fit_denses.3.bias', 'cls.predictions.decoder.weight', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.2.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.bias', 'fit_denses.4.bias', 'cls.seq_relationship.bias', 'fit_denses.0.bias', 'fit_denses.0.weight', 'fit_denses.5.bias', 'fit_denses.1.bias', 'fit_denses.4.weight', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.weight', 'cls.predictions.bias', 'fit_denses.3.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.weight', 'fit_denses.3.bias', 'cls.predictions.decoder.weight', 'fit_denses.6.weight', 'cls.seq_relationship.weight', 'fit_denses.2.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.weight', 'fit_denses.0.bias', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.weight', 'fit_denses.2.bias', 'fit_denses.5.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.weight', 'fit_denses.1.weight', 'fit_denses.4.weight', 'cls.predictions.bias', 'fit_denses.3.bias', 'fit_denses.6.bias', 'fit_denses.4.bias', 'fit_denses.0.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.4.weight', 'fit_denses.5.bias', 'fit_denses.3.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.6.bias', 'cls.seq_relationship.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.1.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.bias', 'cls.seq_relationship.weight', 'fit_denses.5.weight', 'fit_denses.3.bias', 'fit_denses.1.bias', 'cls.predictions.bias', 'fit_denses.4.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.6.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.bias', 'cls.predictions.bias', 'fit_denses.3.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.bias', 'fit_denses.5.weight', 'cls.seq_relationship.weight', 'fit_denses.0.bias', 'cls.predictions.decoder.weight', 'fit_denses.4.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.0.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.bias', 'cls.seq_relationship.bias', 'fit_denses.1.weight', 'fit_denses.2.weight', 'fit_denses.6.weight', 'fit_denses.3.bias', 'fit_denses.1.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.bias', 'fit_denses.5.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'fit_denses.1.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.2.bias', 'cls.predictions.decoder.weight', 'fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.1.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.bias', 'fit_denses.2.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.3.weight', 'fit_denses.4.weight', 'fit_denses.5.bias', 'cls.seq_relationship.bias', 'fit_denses.6.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.0.bias', 'fit_denses.4.bias', 'fit_denses.2.bias', 'fit_denses.1.weight', 'cls.seq_relationship.weight', 'fit_denses.3.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'fit_denses.4.weight', 'fit_denses.2.weight', 'fit_denses.6.bias', 'cls.predictions.bias', 'fit_denses.5.weight', 'fit_denses.3.weight', 'fit_denses.6.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.0.weight', 'fit_denses.1.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.2.weight', 'fit_denses.1.weight', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'fit_denses.4.weight', 'fit_denses.0.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.3.bias', 'cls.seq_relationship.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.6.weight', 'fit_denses.5.weight', 'fit_denses.3.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'fit_denses.2.bias', 'fit_denses.4.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.bias', 'fit_denses.1.bias', 'fit_denses.1.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'fit_denses.2.weight', 'fit_denses.3.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'fit_denses.4.weight', 'fit_denses.5.bias', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.bias', 'cls.seq_relationship.weight', 'fit_denses.4.bias', 'fit_denses.0.bias', 'fit_denses.6.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.2.weight', 'cls.predictions.bias', 'fit_denses.4.bias', 'fit_denses.2.bias', 'fit_denses.1.bias', 'fit_denses.3.bias', 'fit_denses.3.weight', 'fit_denses.5.bias', 'fit_denses.0.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.5.weight', 'fit_denses.4.weight', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'fit_denses.1.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.0.weight', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.weight', 'fit_denses.6.bias', 'fit_denses.1.bias', 'fit_denses.2.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'fit_denses.6.weight', 'fit_denses.1.weight', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'fit_denses.5.bias', 'fit_denses.4.weight', 'fit_denses.0.bias', 'fit_denses.5.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.3.weight', 'fit_denses.2.weight', 'fit_denses.4.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.4.bias', 'fit_denses.3.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.5.bias', 'fit_denses.4.weight', 'fit_denses.6.weight', 'fit_denses.6.bias', 'fit_denses.2.weight', 'cls.predictions.bias', 'fit_denses.0.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.bias', 'fit_denses.0.bias', 'cls.seq_relationship.weight', 'fit_denses.2.bias', 'fit_denses.1.weight', 'fit_denses.5.weight', 'fit_denses.3.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'fit_denses.2.bias', 'fit_denses.4.bias', 'fit_denses.4.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.bias', 'fit_denses.6.weight', 'cls.predictions.bias', 'fit_denses.1.weight', 'fit_denses.0.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.5.weight', 'fit_denses.0.bias', 'cls.seq_relationship.bias', 'fit_denses.2.weight', 'fit_denses.3.weight', 'fit_denses.5.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 81.37it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 413.69it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+100%|██████████| 3/3 [00:00<00:00, 219.09it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 153.01it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+100%|██████████| 3/3 [00:00<00:00, 104.28it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 177.59it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 562.99it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 448.51it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+100%|██████████| 3/3 [00:00<00:00, 183.48it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 378.91it/s]
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 589.78it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+100%|██████████| 3/3 [00:00<00:00, 211.89it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 516.90it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 691.94it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 197.77it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 307.43it/s]
+INFO flwr 2023-12-18 10:37:57,615 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 502.87it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+INFO flwr 2023-12-18 10:37:57,746 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+  0%|          | 0/3 [00:00<?, ?it/s]Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+100%|██████████| 3/3 [00:00<00:00, 570.14it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+INFO flwr 2023-12-18 10:37:58,022 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+INFO flwr 2023-12-18 10:37:57,815 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+INFO flwr 2023-12-18 10:37:58,077 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+INFO flwr 2023-12-18 10:37:58,133 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 720.01it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 201.67it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 694.57it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]INFO flwr 2023-12-18 10:37:58,448 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 10:37:58,458 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 10:37:58,461 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+100%|██████████| 3/3 [00:00<00:00, 721.99it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+DEBUG flwr 2023-12-18 10:37:58,480 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:58,604 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+DEBUG flwr 2023-12-18 10:37:58,635 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:58,652 | connection.py:42 | ChannelConnectivity.CONNECTING
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+INFO flwr 2023-12-18 10:37:58,736 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+INFO flwr 2023-12-18 10:37:58,552 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:37:58,552 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:58,786 | connection.py:42 | ChannelConnectivity.READY
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+INFO flwr 2023-12-18 10:37:58,790 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+DEBUG flwr 2023-12-18 10:37:58,998 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 10:37:59,041 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 113.49it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+INFO flwr 2023-12-18 10:37:59,101 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 10:37:59,153 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 204.94it/s]
+DEBUG flwr 2023-12-18 10:37:59,315 | connection.py:42 | ChannelConnectivity.IDLE
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+DEBUG flwr 2023-12-18 10:37:59,338 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+INFO flwr 2023-12-18 10:37:59,446 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+DEBUG flwr 2023-12-18 10:37:59,627 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:59,631 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:37:59,679 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:59,679 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 10:37:59,734 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:37:59,737 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:59,756 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 10:37:59,867 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:37:59,909 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:37:59,921 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:37:59,921 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:37:59,940 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 10:38:00,118 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:38:00,121 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,130 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:00,290 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:00,340 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,341 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:00,341 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,341 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:00,413 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,413 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:00,597 | connection.py:42 | ChannelConnectivity.IDLE
+INFO flwr 2023-12-18 10:38:00,623 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:38:00,623 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:00,677 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,696 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 10:38:00,731 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:38:00,733 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,733 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:00,823 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,895 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:00,933 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:00,934 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 10:38:01,037 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:38:01,081 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:01,109 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,233 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:01,268 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,269 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:01,286 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,306 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:01,306 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:01,345 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,345 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,346 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,346 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,346 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,346 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,347 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,348 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,690 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:01,691 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:01,691 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 10:38:01,862 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 10:38:01,889 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 10:38:02,514 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:02,514 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:02,572 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 10:38:02,572 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 10:38:04,961 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:05,361 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 10:38:05,423 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 10:38:07,444 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2023-12-18 10:38:07,444 | server.py:91 | Evaluating initial parameters
+INFO flwr 2023-12-18 10:38:07,444 | server.py:104 | FL starting
+DEBUG flwr 2023-12-18 10:38:07,444 | server.py:222 | fit_round 1: strategy sampled 24 clients (out of 24)
+DEBUG flwr 2023-12-18 10:39:17,474 | connection.py:141 | gRPC channel closed
+Training 1 epoch(s) w/ 8551 batches each
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+DEBUG flwr 2023-12-18 10:39:17,495 | connection.py:141 | gRPC channel closed
+Training 1 epoch(s) w/ 8551 batches each
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    task_res = handle(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    return _fit(client, server_msg.fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    return _fit(client, server_msg.fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    fit_res = maybe_call_fit(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    fit_res = maybe_call_fit(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    return client.fit(fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 46, in fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 46, in fit
+    secagg.trainOne(self.model, self.trainloader, epochs=1, device=DEVICE)
+  File "/scratch/ml9027/ming/lamp-main/secagg.py", line 106, in trainOne
+    secagg.trainOne(self.model, self.trainloader, epochs=1, device=DEVICE)
+  File "/scratch/ml9027/ming/lamp-main/secagg.py", line 106, in trainOne
+    outputs = net(**data)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    outputs = net(**data)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 1540, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 1540, in forward
+    outputs = self.bert(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    outputs = self.bert(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 999, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 999, in forward
+    encoder_outputs = self.encoder(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    encoder_outputs = self.encoder(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 585, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 585, in forward
+    layer_outputs = layer_module(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    layer_outputs = layer_module(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 472, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 472, in forward
+    self_attention_outputs = self.attention(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    self_attention_outputs = self.attention(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 402, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 402, in forward
+    self_outputs = self.self(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    self_outputs = self.self(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 268, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 268, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    mixed_query_layer = self.query(hidden_states)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/functional.py", line 1848, in linear
+    return F.linear(input, self.weight, self.bias)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+DEBUG flwr 2023-12-18 10:39:17,638 | connection.py:141 | gRPC channel closed
+Training 1 epoch(s) w/ 8551 batches each
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    return _fit(client, server_msg.fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    fit_res = maybe_call_fit(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 46, in fit
+    secagg.trainOne(self.model, self.trainloader, epochs=1, device=DEVICE)
+  File "/scratch/ml9027/ming/lamp-main/secagg.py", line 106, in trainOne
+    outputs = net(**data)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 1540, in forward
+    outputs = self.bert(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 999, in forward
+    encoder_outputs = self.encoder(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 585, in forward
+    layer_outputs = layer_module(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 472, in forward
+    self_attention_outputs = self.attention(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 402, in forward
+    self_outputs = self.self(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 268, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/functional.py", line 1848, in linear
+DEBUG flwr 2023-12-18 10:39:17,677 | connection.py:141 | gRPC channel closed
+Training 1 epoch(s) w/ 8551 batches each
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    return _fit(client, server_msg.fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    fit_res = maybe_call_fit(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 46, in fit
+    secagg.trainOne(self.model, self.trainloader, epochs=1, device=DEVICE)
+  File "/scratch/ml9027/ming/lamp-main/secagg.py", line 106, in trainOne
+    outputs = net(**data)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 1540, in forward
+    outputs = self.bert(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 999, in forward
+    encoder_outputs = self.encoder(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 585, in forward
+    layer_outputs = layer_module(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 472, in forward
+    self_attention_outputs = self.attention(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 402, in forward
+    self_outputs = self.self(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 268, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+DEBUG flwr 2023-12-18 10:39:17,712 | connection.py:141 | gRPC channel closed
+Training 1 epoch(s) w/ 8551 batches each
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 294, in start_client
+    bwd_msg: Bwd = app(fwd=fwd_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/flower.py", line 82, in __call__
+    task_res = handle(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 117, in handle
+    client_msg = handle_legacy_message(client_fn, server_msg)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 153, in handle_legacy_message
+    return _fit(client, server_msg.fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/message_handler/message_handler.py", line 212, in _fit
+    fit_res = maybe_call_fit(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/client.py", line 223, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/numpy_client.py", line 227, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 46, in fit
+    secagg.trainOne(self.model, self.trainloader, epochs=1, device=DEVICE)
+  File "/scratch/ml9027/ming/lamp-main/secagg.py", line 106, in trainOne
+    outputs = net(**data)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 1540, in forward
+    outputs = self.bert(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 999, in forward
+    encoder_outputs = self.encoder(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 585, in forward
+    layer_outputs = layer_module(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 472, in forward
+    self_attention_outputs = self.attention(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 402, in forward
+    self_outputs = self.self(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py", line 268, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_NOT_INITIALIZED when calling `cublasCreate(handle)`
+DEBUG flwr 2023-12-18 10:39:43,989 | server.py:236 | fit_round 1 received 19 results and 5 failures
+WARNING flwr 2023-12-18 10:39:50,895 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2023-12-18 10:39:50,904 | server.py:173 | evaluate_round 1: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:43:05,347 | server.py:187 | evaluate_round 1 received 19 results and 0 failures
+WARNING flwr 2023-12-18 10:43:05,347 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2023-12-18 10:43:05,347 | server.py:222 | fit_round 2: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:44:34,819 | server.py:236 | fit_round 2 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:44:42,125 | server.py:173 | evaluate_round 2: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:47:51,304 | server.py:187 | evaluate_round 2 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:47:51,304 | server.py:222 | fit_round 3: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:49:16,704 | server.py:236 | fit_round 3 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:49:23,452 | server.py:173 | evaluate_round 3: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:52:31,775 | server.py:187 | evaluate_round 3 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:52:31,785 | server.py:222 | fit_round 4: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:54:01,021 | server.py:236 | fit_round 4 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:54:06,697 | server.py:173 | evaluate_round 4: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:57:15,602 | server.py:187 | evaluate_round 4 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:57:15,602 | server.py:222 | fit_round 5: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 10:58:46,260 | server.py:236 | fit_round 5 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 10:58:51,571 | server.py:173 | evaluate_round 5: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:02:01,036 | server.py:187 | evaluate_round 5 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:02:01,037 | server.py:222 | fit_round 6: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:03:30,745 | server.py:236 | fit_round 6 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:03:36,722 | server.py:173 | evaluate_round 6: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:06:46,150 | server.py:187 | evaluate_round 6 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:06:46,151 | server.py:222 | fit_round 7: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:08:14,964 | server.py:236 | fit_round 7 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:08:20,063 | server.py:173 | evaluate_round 7: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:11:27,012 | server.py:187 | evaluate_round 7 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:11:27,013 | server.py:222 | fit_round 8: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:12:55,241 | server.py:236 | fit_round 8 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:13:00,904 | server.py:173 | evaluate_round 8: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:16:06,435 | server.py:187 | evaluate_round 8 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:16:06,436 | server.py:222 | fit_round 9: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:17:37,261 | server.py:236 | fit_round 9 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:17:43,998 | server.py:173 | evaluate_round 9: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:20:52,272 | server.py:187 | evaluate_round 9 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:20:52,285 | server.py:222 | fit_round 10: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:22:21,156 | server.py:236 | fit_round 10 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:22:26,157 | server.py:173 | evaluate_round 10: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:25:35,318 | server.py:187 | evaluate_round 10 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:25:35,318 | server.py:222 | fit_round 11: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:27:05,032 | server.py:236 | fit_round 11 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:27:11,277 | server.py:173 | evaluate_round 11: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:30:20,944 | server.py:187 | evaluate_round 11 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:30:20,944 | server.py:222 | fit_round 12: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:31:51,059 | server.py:236 | fit_round 12 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:31:56,745 | server.py:173 | evaluate_round 12: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:35:04,290 | server.py:187 | evaluate_round 12 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:35:04,291 | server.py:222 | fit_round 13: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:36:33,472 | server.py:236 | fit_round 13 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:36:38,880 | server.py:173 | evaluate_round 13: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:39:47,039 | server.py:187 | evaluate_round 13 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:39:47,039 | server.py:222 | fit_round 14: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:41:14,952 | server.py:236 | fit_round 14 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:41:21,087 | server.py:173 | evaluate_round 14: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:44:28,791 | server.py:187 | evaluate_round 14 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:44:28,791 | server.py:222 | fit_round 15: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:45:58,077 | server.py:236 | fit_round 15 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:46:02,848 | server.py:173 | evaluate_round 15: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:49:08,329 | server.py:187 | evaluate_round 15 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:49:08,329 | server.py:222 | fit_round 16: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:50:37,436 | server.py:236 | fit_round 16 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:50:43,345 | server.py:173 | evaluate_round 16: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:53:51,419 | server.py:187 | evaluate_round 16 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:53:51,419 | server.py:222 | fit_round 17: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:55:21,079 | server.py:236 | fit_round 17 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:55:26,756 | server.py:173 | evaluate_round 17: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 11:58:35,211 | server.py:187 | evaluate_round 17 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 11:58:35,211 | server.py:222 | fit_round 18: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:00:02,508 | server.py:236 | fit_round 18 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:00:08,090 | server.py:173 | evaluate_round 18: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:03:15,478 | server.py:187 | evaluate_round 18 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:03:15,478 | server.py:222 | fit_round 19: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:04:43,595 | server.py:236 | fit_round 19 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:04:49,459 | server.py:173 | evaluate_round 19: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:07:55,847 | server.py:187 | evaluate_round 19 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:07:55,874 | server.py:222 | fit_round 20: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:09:23,879 | server.py:236 | fit_round 20 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:09:29,015 | server.py:173 | evaluate_round 20: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:12:36,523 | server.py:187 | evaluate_round 20 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:12:36,523 | server.py:222 | fit_round 21: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:14:06,660 | server.py:236 | fit_round 21 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:14:12,345 | server.py:173 | evaluate_round 21: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:17:21,529 | server.py:187 | evaluate_round 21 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:17:21,529 | server.py:222 | fit_round 22: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:18:51,662 | server.py:236 | fit_round 22 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:18:57,488 | server.py:173 | evaluate_round 22: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:22:07,776 | server.py:187 | evaluate_round 22 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:22:07,776 | server.py:222 | fit_round 23: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:23:37,599 | server.py:236 | fit_round 23 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:23:42,419 | server.py:173 | evaluate_round 23: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:26:51,965 | server.py:187 | evaluate_round 23 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:26:51,965 | server.py:222 | fit_round 24: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:28:19,146 | server.py:236 | fit_round 24 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:28:25,516 | server.py:173 | evaluate_round 24: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:31:33,203 | server.py:187 | evaluate_round 24 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:31:33,203 | server.py:222 | fit_round 25: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:33:01,565 | server.py:236 | fit_round 25 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:33:07,017 | server.py:173 | evaluate_round 25: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:36:14,084 | server.py:187 | evaluate_round 25 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:36:14,084 | server.py:222 | fit_round 26: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:37:41,623 | server.py:236 | fit_round 26 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:37:47,104 | server.py:173 | evaluate_round 26: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:40:54,826 | server.py:187 | evaluate_round 26 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:40:54,826 | server.py:222 | fit_round 27: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:42:22,681 | server.py:236 | fit_round 27 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:42:29,205 | server.py:173 | evaluate_round 27: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:45:36,887 | server.py:187 | evaluate_round 27 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:45:36,887 | server.py:222 | fit_round 28: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:47:07,004 | server.py:236 | fit_round 28 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:47:11,826 | server.py:173 | evaluate_round 28: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:50:18,918 | server.py:187 | evaluate_round 28 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:50:18,918 | server.py:222 | fit_round 29: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:51:49,050 | server.py:236 | fit_round 29 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:51:55,970 | server.py:173 | evaluate_round 29: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:55:03,789 | server.py:187 | evaluate_round 29 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:55:03,789 | server.py:222 | fit_round 30: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:56:32,928 | server.py:236 | fit_round 30 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:56:38,964 | server.py:173 | evaluate_round 30: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 12:59:47,278 | server.py:187 | evaluate_round 30 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 12:59:47,278 | server.py:222 | fit_round 31: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:01:15,789 | server.py:236 | fit_round 31 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:01:20,694 | server.py:173 | evaluate_round 31: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:04:28,051 | server.py:187 | evaluate_round 31 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:04:28,052 | server.py:222 | fit_round 32: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:05:56,526 | server.py:236 | fit_round 32 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:06:02,452 | server.py:173 | evaluate_round 32: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:09:07,690 | server.py:187 | evaluate_round 32 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:09:07,690 | server.py:222 | fit_round 33: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:10:35,720 | server.py:236 | fit_round 33 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:10:40,934 | server.py:173 | evaluate_round 33: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:13:48,468 | server.py:187 | evaluate_round 33 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:13:48,469 | server.py:222 | fit_round 34: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:15:17,718 | server.py:236 | fit_round 34 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:15:23,007 | server.py:173 | evaluate_round 34: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:18:31,262 | server.py:187 | evaluate_round 34 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:18:31,263 | server.py:222 | fit_round 35: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:20:01,995 | server.py:236 | fit_round 35 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:20:07,912 | server.py:173 | evaluate_round 35: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:23:16,606 | server.py:187 | evaluate_round 35 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:23:16,606 | server.py:222 | fit_round 36: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:24:46,370 | server.py:236 | fit_round 36 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:24:51,304 | server.py:173 | evaluate_round 36: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:28:00,275 | server.py:187 | evaluate_round 36 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:28:00,276 | server.py:222 | fit_round 37: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:29:30,039 | server.py:236 | fit_round 37 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:29:36,166 | server.py:173 | evaluate_round 37: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:32:44,167 | server.py:187 | evaluate_round 37 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:32:44,167 | server.py:222 | fit_round 38: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:34:12,349 | server.py:236 | fit_round 38 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:34:18,782 | server.py:173 | evaluate_round 38: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:37:26,010 | server.py:187 | evaluate_round 38 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:37:26,022 | server.py:222 | fit_round 39: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:38:54,632 | server.py:236 | fit_round 39 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:38:59,625 | server.py:173 | evaluate_round 39: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:42:07,325 | server.py:187 | evaluate_round 39 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:42:07,325 | server.py:222 | fit_round 40: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:43:35,903 | server.py:236 | fit_round 40 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:43:41,935 | server.py:173 | evaluate_round 40: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:46:49,543 | server.py:187 | evaluate_round 40 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:46:49,543 | server.py:222 | fit_round 41: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:48:17,917 | server.py:236 | fit_round 41 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:48:22,848 | server.py:173 | evaluate_round 41: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:51:29,551 | server.py:187 | evaluate_round 41 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:51:29,551 | server.py:222 | fit_round 42: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:52:57,781 | server.py:236 | fit_round 42 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:53:03,542 | server.py:173 | evaluate_round 42: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:56:12,490 | server.py:187 | evaluate_round 42 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:56:12,491 | server.py:222 | fit_round 43: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 13:57:42,066 | server.py:236 | fit_round 43 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 13:57:47,901 | server.py:173 | evaluate_round 43: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:00:55,286 | server.py:187 | evaluate_round 43 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:00:55,287 | server.py:222 | fit_round 44: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:02:24,765 | server.py:236 | fit_round 44 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:02:29,964 | server.py:173 | evaluate_round 44: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:05:37,405 | server.py:187 | evaluate_round 44 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:05:37,406 | server.py:222 | fit_round 45: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:07:05,824 | server.py:236 | fit_round 45 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:07:11,989 | server.py:173 | evaluate_round 45: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:10:18,460 | server.py:187 | evaluate_round 45 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:10:18,461 | server.py:222 | fit_round 46: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:11:47,921 | server.py:236 | fit_round 46 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:11:53,582 | server.py:173 | evaluate_round 46: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:15:01,563 | server.py:187 | evaluate_round 46 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:15:01,564 | server.py:222 | fit_round 47: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:16:30,622 | server.py:236 | fit_round 47 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:16:36,297 | server.py:173 | evaluate_round 47: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:19:44,774 | server.py:187 | evaluate_round 47 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:19:44,775 | server.py:222 | fit_round 48: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:21:15,150 | server.py:236 | fit_round 48 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:21:21,014 | server.py:173 | evaluate_round 48: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:24:30,314 | server.py:187 | evaluate_round 48 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:24:30,327 | server.py:222 | fit_round 49: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:26:00,580 | server.py:236 | fit_round 49 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:26:05,368 | server.py:173 | evaluate_round 49: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:29:15,084 | server.py:187 | evaluate_round 49 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:29:15,085 | server.py:222 | fit_round 50: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:30:42,906 | server.py:236 | fit_round 50 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:30:48,870 | server.py:173 | evaluate_round 50: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:33:57,472 | server.py:187 | evaluate_round 50 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:33:57,472 | server.py:222 | fit_round 51: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:35:28,804 | server.py:236 | fit_round 51 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:35:34,919 | server.py:173 | evaluate_round 51: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:38:47,585 | server.py:187 | evaluate_round 51 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:38:47,585 | server.py:222 | fit_round 52: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:40:17,728 | server.py:236 | fit_round 52 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:40:22,873 | server.py:173 | evaluate_round 52: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:43:33,819 | server.py:187 | evaluate_round 52 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:43:33,820 | server.py:222 | fit_round 53: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:45:04,379 | server.py:236 | fit_round 53 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:45:10,626 | server.py:173 | evaluate_round 53: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:48:18,731 | server.py:187 | evaluate_round 53 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:48:18,732 | server.py:222 | fit_round 54: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:49:48,387 | server.py:236 | fit_round 54 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:49:54,759 | server.py:173 | evaluate_round 54: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:53:03,409 | server.py:187 | evaluate_round 54 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:53:03,409 | server.py:222 | fit_round 55: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:54:33,981 | server.py:236 | fit_round 55 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:54:39,502 | server.py:173 | evaluate_round 55: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:57:48,555 | server.py:187 | evaluate_round 55 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:57:48,556 | server.py:222 | fit_round 56: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 14:59:18,957 | server.py:236 | fit_round 56 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 14:59:24,997 | server.py:173 | evaluate_round 56: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:02:37,503 | server.py:187 | evaluate_round 56 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:02:37,503 | server.py:222 | fit_round 57: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:04:12,240 | server.py:236 | fit_round 57 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:04:18,621 | server.py:173 | evaluate_round 57: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:07:30,823 | server.py:187 | evaluate_round 57 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:07:30,841 | server.py:222 | fit_round 58: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:09:01,273 | server.py:236 | fit_round 58 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:09:06,509 | server.py:173 | evaluate_round 58: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:12:14,504 | server.py:187 | evaluate_round 58 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:12:14,505 | server.py:222 | fit_round 59: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:13:44,745 | server.py:236 | fit_round 59 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:13:50,656 | server.py:173 | evaluate_round 59: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:16:59,103 | server.py:187 | evaluate_round 59 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:16:59,103 | server.py:222 | fit_round 60: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:18:29,791 | server.py:236 | fit_round 60 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:18:34,891 | server.py:173 | evaluate_round 60: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:21:41,784 | server.py:187 | evaluate_round 60 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:21:41,784 | server.py:222 | fit_round 61: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:23:19,269 | server.py:236 | fit_round 61 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:23:25,673 | server.py:173 | evaluate_round 61: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:26:43,582 | server.py:187 | evaluate_round 61 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:26:43,582 | server.py:222 | fit_round 62: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:28:18,583 | server.py:236 | fit_round 62 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:28:24,819 | server.py:173 | evaluate_round 62: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:31:40,500 | server.py:187 | evaluate_round 62 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:31:40,505 | server.py:222 | fit_round 63: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:33:13,720 | server.py:236 | fit_round 63 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:33:18,787 | server.py:173 | evaluate_round 63: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:36:35,092 | server.py:187 | evaluate_round 63 received 19 results and 0 failures
+DEBUG flwr 2023-12-18 15:36:35,099 | server.py:222 | fit_round 64: strategy sampled 19 clients (out of 19)
+DEBUG flwr 2023-12-18 15:38:12,008 | server.py:236 | fit_round 64 received 19 results and 0 failures

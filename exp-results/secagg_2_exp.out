@@ -1,0 +1,672 @@
+INFO flwr 2023-12-18 00:22:05,741 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=100, round_timeout=None)
+INFO flwr 2023-12-18 00:22:05,808 | app.py:176 | Flower ECE: gRPC server running (100 rounds), SSL is disabled
+INFO flwr 2023-12-18 00:22:05,808 | server.py:89 | Initializing global parameters
+INFO flwr 2023-12-18 00:22:05,809 | server.py:276 | Requesting initial parameters from one random client
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.2.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.6.weight', 'fit_denses.4.bias', 'fit_denses.5.bias', 'cls.seq_relationship.weight', 'fit_denses.3.weight', 'fit_denses.1.weight', 'fit_denses.0.bias', 'fit_denses.4.weight', 'fit_denses.6.bias', 'fit_denses.1.bias', 'cls.predictions.bias', 'fit_denses.0.weight', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.bias', 'fit_denses.1.weight', 'fit_denses.5.weight', 'cls.predictions.bias', 'fit_denses.5.bias', 'fit_denses.4.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'fit_denses.6.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.bias', 'fit_denses.2.bias', 'fit_denses.0.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.4.bias', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.3.weight', 'fit_denses.6.weight', 'fit_denses.1.bias', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 234.67it/s]
+100%|██████████| 3/3 [00:00<00:00, 48.66it/s]
+  0%|          | 0/9 [00:00<?, ?ba/s]  0%|          | 0/9 [00:00<?, ?ba/s] 33%|███▎      | 3/9 [00:00<00:00, 21.60ba/s] 33%|███▎      | 3/9 [00:00<00:00, 21.13ba/s]100%|██████████| 9/9 [00:00<00:00, 44.39ba/s]
+100%|██████████| 9/9 [00:00<00:00, 42.70ba/s]
+  0%|          | 0/2 [00:00<?, ?ba/s]  0%|          | 0/2 [00:00<?, ?ba/s]100%|██████████| 2/2 [00:00<00:00, 83.60ba/s]
+100%|██████████| 2/2 [00:00<00:00, 106.26ba/s]
+  0%|          | 0/2 [00:00<?, ?ba/s]  0%|          | 0/2 [00:00<?, ?ba/s]100%|██████████| 2/2 [00:00<00:00, 81.56ba/s]
+100%|██████████| 2/2 [00:00<00:00, 62.10ba/s]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO flwr 2023-12-18 00:22:21,690 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 00:22:21,690 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:22:21,692 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:22:21,692 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:22:21,694 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:22:21,694 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:22:21,698 | connection.py:42 | ChannelConnectivity.READY
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+DEBUG flwr 2023-12-18 00:22:21,764 | connection.py:42 | ChannelConnectivity.READY
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO flwr 2023-12-18 00:22:23,213 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2023-12-18 00:22:23,213 | server.py:91 | Evaluating initial parameters
+INFO flwr 2023-12-18 00:22:23,213 | server.py:104 | FL starting
+DEBUG flwr 2023-12-18 00:22:23,213 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:22:28,286 | server.py:236 | fit_round 1 received 2 results and 0 failures
+WARNING flwr 2023-12-18 00:22:28,917 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2023-12-18 00:22:28,922 | server.py:173 | evaluate_round 1: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:22:36,334 | server.py:187 | evaluate_round 1 received 2 results and 0 failures
+WARNING flwr 2023-12-18 00:22:36,334 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2023-12-18 00:22:36,334 | server.py:222 | fit_round 2: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:22:39,767 | server.py:236 | fit_round 2 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:22:40,301 | server.py:173 | evaluate_round 2: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:22:47,411 | server.py:187 | evaluate_round 2 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:22:47,412 | server.py:222 | fit_round 3: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:22:50,857 | server.py:236 | fit_round 3 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:22:51,499 | server.py:173 | evaluate_round 3: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:22:58,574 | server.py:187 | evaluate_round 3 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:22:58,574 | server.py:222 | fit_round 4: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:02,302 | server.py:236 | fit_round 4 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:02,850 | server.py:173 | evaluate_round 4: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:09,913 | server.py:187 | evaluate_round 4 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:09,913 | server.py:222 | fit_round 5: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:13,590 | server.py:236 | fit_round 5 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:14,070 | server.py:173 | evaluate_round 5: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:21,252 | server.py:187 | evaluate_round 5 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:21,252 | server.py:222 | fit_round 6: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:24,555 | server.py:236 | fit_round 6 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:25,077 | server.py:173 | evaluate_round 6: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:32,217 | server.py:187 | evaluate_round 6 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:32,218 | server.py:222 | fit_round 7: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:35,442 | server.py:236 | fit_round 7 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:35,999 | server.py:173 | evaluate_round 7: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:42,896 | server.py:187 | evaluate_round 7 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:42,896 | server.py:222 | fit_round 8: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:46,517 | server.py:236 | fit_round 8 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:47,049 | server.py:173 | evaluate_round 8: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:54,120 | server.py:187 | evaluate_round 8 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:54,121 | server.py:222 | fit_round 9: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:23:57,151 | server.py:236 | fit_round 9 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:23:57,657 | server.py:173 | evaluate_round 9: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:04,841 | server.py:187 | evaluate_round 9 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:04,841 | server.py:222 | fit_round 10: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:08,115 | server.py:236 | fit_round 10 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:08,637 | server.py:173 | evaluate_round 10: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:15,771 | server.py:187 | evaluate_round 10 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:15,772 | server.py:222 | fit_round 11: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:18,952 | server.py:236 | fit_round 11 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:19,458 | server.py:173 | evaluate_round 11: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:26,641 | server.py:187 | evaluate_round 11 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:26,641 | server.py:222 | fit_round 12: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:30,298 | server.py:236 | fit_round 12 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:30,778 | server.py:173 | evaluate_round 12: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:37,888 | server.py:187 | evaluate_round 12 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:37,888 | server.py:222 | fit_round 13: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:41,579 | server.py:236 | fit_round 13 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:42,087 | server.py:173 | evaluate_round 13: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:49,175 | server.py:187 | evaluate_round 13 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:49,175 | server.py:222 | fit_round 14: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:24:52,362 | server.py:236 | fit_round 14 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:24:52,884 | server.py:173 | evaluate_round 14: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:00,075 | server.py:187 | evaluate_round 14 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:00,076 | server.py:222 | fit_round 15: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:03,292 | server.py:236 | fit_round 15 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:03,828 | server.py:173 | evaluate_round 15: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:11,076 | server.py:187 | evaluate_round 15 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:11,076 | server.py:222 | fit_round 16: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:14,740 | server.py:236 | fit_round 16 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:15,286 | server.py:173 | evaluate_round 16: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:22,470 | server.py:187 | evaluate_round 16 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:22,470 | server.py:222 | fit_round 17: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:26,192 | server.py:236 | fit_round 17 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:26,671 | server.py:173 | evaluate_round 17: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:33,774 | server.py:187 | evaluate_round 17 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:33,775 | server.py:222 | fit_round 18: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:37,020 | server.py:236 | fit_round 18 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:37,531 | server.py:173 | evaluate_round 18: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:44,705 | server.py:187 | evaluate_round 18 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:44,706 | server.py:222 | fit_round 19: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:47,864 | server.py:236 | fit_round 19 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:48,363 | server.py:173 | evaluate_round 19: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:55,450 | server.py:187 | evaluate_round 19 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:55,450 | server.py:222 | fit_round 20: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:25:58,906 | server.py:236 | fit_round 20 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:25:59,418 | server.py:173 | evaluate_round 20: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:06,440 | server.py:187 | evaluate_round 20 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:06,440 | server.py:222 | fit_round 21: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:09,870 | server.py:236 | fit_round 21 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:10,390 | server.py:173 | evaluate_round 21: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:17,398 | server.py:187 | evaluate_round 21 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:17,398 | server.py:222 | fit_round 22: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:20,484 | server.py:236 | fit_round 22 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:20,983 | server.py:173 | evaluate_round 22: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:27,938 | server.py:187 | evaluate_round 22 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:27,939 | server.py:222 | fit_round 23: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:31,363 | server.py:236 | fit_round 23 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:31,843 | server.py:173 | evaluate_round 23: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:38,778 | server.py:187 | evaluate_round 23 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:38,778 | server.py:222 | fit_round 24: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:42,315 | server.py:236 | fit_round 24 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:42,790 | server.py:173 | evaluate_round 24: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:49,894 | server.py:187 | evaluate_round 24 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:49,894 | server.py:222 | fit_round 25: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:26:53,587 | server.py:236 | fit_round 25 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:26:54,092 | server.py:173 | evaluate_round 25: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:01,207 | server.py:187 | evaluate_round 25 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:01,207 | server.py:222 | fit_round 26: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:04,941 | server.py:236 | fit_round 26 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:05,429 | server.py:173 | evaluate_round 26: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:12,507 | server.py:187 | evaluate_round 26 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:12,507 | server.py:222 | fit_round 27: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:15,699 | server.py:236 | fit_round 27 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:16,223 | server.py:173 | evaluate_round 27: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:23,209 | server.py:187 | evaluate_round 27 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:23,209 | server.py:222 | fit_round 28: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:26,517 | server.py:236 | fit_round 28 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:27,023 | server.py:173 | evaluate_round 28: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:34,039 | server.py:187 | evaluate_round 28 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:34,040 | server.py:222 | fit_round 29: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:37,194 | server.py:236 | fit_round 29 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:37,701 | server.py:173 | evaluate_round 29: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:44,663 | server.py:187 | evaluate_round 29 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:44,663 | server.py:222 | fit_round 30: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:47,790 | server.py:236 | fit_round 30 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:48,322 | server.py:173 | evaluate_round 30: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:55,390 | server.py:187 | evaluate_round 30 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:55,391 | server.py:222 | fit_round 31: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:27:58,669 | server.py:236 | fit_round 31 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:27:59,187 | server.py:173 | evaluate_round 31: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:06,067 | server.py:187 | evaluate_round 31 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:06,067 | server.py:222 | fit_round 32: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:09,377 | server.py:236 | fit_round 32 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:09,863 | server.py:173 | evaluate_round 32: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:16,815 | server.py:187 | evaluate_round 32 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:16,815 | server.py:222 | fit_round 33: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:19,980 | server.py:236 | fit_round 33 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:20,451 | server.py:173 | evaluate_round 33: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:27,528 | server.py:187 | evaluate_round 33 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:27,528 | server.py:222 | fit_round 34: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:30,711 | server.py:236 | fit_round 34 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:31,197 | server.py:173 | evaluate_round 34: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:38,270 | server.py:187 | evaluate_round 34 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:38,270 | server.py:222 | fit_round 35: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:41,849 | server.py:236 | fit_round 35 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:42,319 | server.py:173 | evaluate_round 35: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:49,362 | server.py:187 | evaluate_round 35 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:49,362 | server.py:222 | fit_round 36: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:28:52,580 | server.py:236 | fit_round 36 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:28:53,072 | server.py:173 | evaluate_round 36: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:00,248 | server.py:187 | evaluate_round 36 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:00,248 | server.py:222 | fit_round 37: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:03,839 | server.py:236 | fit_round 37 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:04,304 | server.py:173 | evaluate_round 37: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:11,372 | server.py:187 | evaluate_round 37 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:11,372 | server.py:222 | fit_round 38: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:14,760 | server.py:236 | fit_round 38 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:15,281 | server.py:173 | evaluate_round 38: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:22,397 | server.py:187 | evaluate_round 38 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:22,398 | server.py:222 | fit_round 39: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:25,667 | server.py:236 | fit_round 39 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:26,186 | server.py:173 | evaluate_round 39: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:33,028 | server.py:187 | evaluate_round 39 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:33,029 | server.py:222 | fit_round 40: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:36,501 | server.py:236 | fit_round 40 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:37,004 | server.py:173 | evaluate_round 40: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:44,087 | server.py:187 | evaluate_round 40 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:44,087 | server.py:222 | fit_round 41: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:47,269 | server.py:236 | fit_round 41 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:47,730 | server.py:173 | evaluate_round 41: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:54,914 | server.py:187 | evaluate_round 41 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:54,915 | server.py:222 | fit_round 42: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:29:58,227 | server.py:236 | fit_round 42 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:29:58,706 | server.py:173 | evaluate_round 42: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:05,688 | server.py:187 | evaluate_round 42 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:05,688 | server.py:222 | fit_round 43: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:09,004 | server.py:236 | fit_round 43 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:09,474 | server.py:173 | evaluate_round 43: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:16,553 | server.py:187 | evaluate_round 43 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:16,553 | server.py:222 | fit_round 44: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:19,867 | server.py:236 | fit_round 44 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:20,386 | server.py:173 | evaluate_round 44: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:27,210 | server.py:187 | evaluate_round 44 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:27,211 | server.py:222 | fit_round 45: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:30,531 | server.py:236 | fit_round 45 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:31,021 | server.py:173 | evaluate_round 45: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:37,963 | server.py:187 | evaluate_round 45 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:37,963 | server.py:222 | fit_round 46: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:41,056 | server.py:236 | fit_round 46 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:41,513 | server.py:173 | evaluate_round 46: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:48,661 | server.py:187 | evaluate_round 46 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:48,662 | server.py:222 | fit_round 47: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:52,210 | server.py:236 | fit_round 47 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:52,674 | server.py:173 | evaluate_round 47: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:30:59,902 | server.py:187 | evaluate_round 47 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:30:59,902 | server.py:222 | fit_round 48: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:03,103 | server.py:236 | fit_round 48 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:03,627 | server.py:173 | evaluate_round 48: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:10,628 | server.py:187 | evaluate_round 48 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:10,628 | server.py:222 | fit_round 49: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:13,826 | server.py:236 | fit_round 49 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:14,326 | server.py:173 | evaluate_round 49: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:21,253 | server.py:187 | evaluate_round 49 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:21,253 | server.py:222 | fit_round 50: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:24,470 | server.py:236 | fit_round 50 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:24,981 | server.py:173 | evaluate_round 50: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:31,887 | server.py:187 | evaluate_round 50 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:31,888 | server.py:222 | fit_round 51: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:35,036 | server.py:236 | fit_round 51 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:35,577 | server.py:173 | evaluate_round 51: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:42,908 | server.py:187 | evaluate_round 51 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:42,908 | server.py:222 | fit_round 52: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:46,271 | server.py:236 | fit_round 52 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:46,786 | server.py:173 | evaluate_round 52: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:53,556 | server.py:187 | evaluate_round 52 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:53,556 | server.py:222 | fit_round 53: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:31:57,006 | server.py:236 | fit_round 53 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:31:57,475 | server.py:173 | evaluate_round 53: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:04,597 | server.py:187 | evaluate_round 53 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:04,598 | server.py:222 | fit_round 54: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:08,171 | server.py:236 | fit_round 54 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:08,634 | server.py:173 | evaluate_round 54: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:15,815 | server.py:187 | evaluate_round 54 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:15,815 | server.py:222 | fit_round 55: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:19,319 | server.py:236 | fit_round 55 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:19,778 | server.py:173 | evaluate_round 55: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:26,889 | server.py:187 | evaluate_round 55 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:26,889 | server.py:222 | fit_round 56: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:30,462 | server.py:236 | fit_round 56 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:30,924 | server.py:173 | evaluate_round 56: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:37,731 | server.py:187 | evaluate_round 56 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:37,731 | server.py:222 | fit_round 57: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:41,370 | server.py:236 | fit_round 57 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:41,837 | server.py:173 | evaluate_round 57: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:49,161 | server.py:187 | evaluate_round 57 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:49,162 | server.py:222 | fit_round 58: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:32:52,277 | server.py:236 | fit_round 58 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:32:52,753 | server.py:173 | evaluate_round 58: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:00,052 | server.py:187 | evaluate_round 58 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:00,052 | server.py:222 | fit_round 59: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:03,421 | server.py:236 | fit_round 59 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:03,914 | server.py:173 | evaluate_round 59: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:11,068 | server.py:187 | evaluate_round 59 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:11,070 | server.py:222 | fit_round 60: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:14,209 | server.py:236 | fit_round 60 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:14,707 | server.py:173 | evaluate_round 60: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:21,665 | server.py:187 | evaluate_round 60 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:21,665 | server.py:222 | fit_round 61: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:24,736 | server.py:236 | fit_round 61 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:25,239 | server.py:173 | evaluate_round 61: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:32,250 | server.py:187 | evaluate_round 61 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:32,250 | server.py:222 | fit_round 62: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:35,399 | server.py:236 | fit_round 62 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:35,963 | server.py:173 | evaluate_round 62: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:42,992 | server.py:187 | evaluate_round 62 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:42,993 | server.py:222 | fit_round 63: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:46,303 | server.py:236 | fit_round 63 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:46,814 | server.py:173 | evaluate_round 63: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:53,671 | server.py:187 | evaluate_round 63 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:53,671 | server.py:222 | fit_round 64: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:33:57,304 | server.py:236 | fit_round 64 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:33:57,774 | server.py:173 | evaluate_round 64: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:04,929 | server.py:187 | evaluate_round 64 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:04,930 | server.py:222 | fit_round 65: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:08,153 | server.py:236 | fit_round 65 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:08,641 | server.py:173 | evaluate_round 65: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:15,478 | server.py:187 | evaluate_round 65 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:15,479 | server.py:222 | fit_round 66: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:19,101 | server.py:236 | fit_round 66 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:19,580 | server.py:173 | evaluate_round 66: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:26,717 | server.py:187 | evaluate_round 66 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:26,717 | server.py:222 | fit_round 67: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:30,162 | server.py:236 | fit_round 67 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:30,664 | server.py:173 | evaluate_round 67: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:37,762 | server.py:187 | evaluate_round 67 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:37,763 | server.py:222 | fit_round 68: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:40,959 | server.py:236 | fit_round 68 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:41,422 | server.py:173 | evaluate_round 68: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:48,642 | server.py:187 | evaluate_round 68 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:48,642 | server.py:222 | fit_round 69: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:52,077 | server.py:236 | fit_round 69 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:52,613 | server.py:173 | evaluate_round 69: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:34:59,671 | server.py:187 | evaluate_round 69 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:34:59,671 | server.py:222 | fit_round 70: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:02,930 | server.py:236 | fit_round 70 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:03,411 | server.py:173 | evaluate_round 70: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:10,468 | server.py:187 | evaluate_round 70 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:10,468 | server.py:222 | fit_round 71: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:13,480 | server.py:236 | fit_round 71 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:13,947 | server.py:173 | evaluate_round 71: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:20,753 | server.py:187 | evaluate_round 71 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:20,754 | server.py:222 | fit_round 72: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:24,196 | server.py:236 | fit_round 72 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:24,676 | server.py:173 | evaluate_round 72: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:31,761 | server.py:187 | evaluate_round 72 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:31,761 | server.py:222 | fit_round 73: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:34,855 | server.py:236 | fit_round 73 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:35,389 | server.py:173 | evaluate_round 73: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:42,546 | server.py:187 | evaluate_round 73 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:42,546 | server.py:222 | fit_round 74: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:45,748 | server.py:236 | fit_round 74 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:46,282 | server.py:173 | evaluate_round 74: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:53,391 | server.py:187 | evaluate_round 74 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:53,392 | server.py:222 | fit_round 75: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:35:56,562 | server.py:236 | fit_round 75 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:35:57,088 | server.py:173 | evaluate_round 75: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:04,214 | server.py:187 | evaluate_round 75 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:04,214 | server.py:222 | fit_round 76: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:07,852 | server.py:236 | fit_round 76 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:08,324 | server.py:173 | evaluate_round 76: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:15,418 | server.py:187 | evaluate_round 76 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:15,419 | server.py:222 | fit_round 77: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:18,851 | server.py:236 | fit_round 77 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:19,352 | server.py:173 | evaluate_round 77: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:26,228 | server.py:187 | evaluate_round 77 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:26,229 | server.py:222 | fit_round 78: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:29,389 | server.py:236 | fit_round 78 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:29,892 | server.py:173 | evaluate_round 78: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:37,036 | server.py:187 | evaluate_round 78 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:37,036 | server.py:222 | fit_round 79: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:40,556 | server.py:236 | fit_round 79 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:41,039 | server.py:173 | evaluate_round 79: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:48,231 | server.py:187 | evaluate_round 79 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:48,231 | server.py:222 | fit_round 80: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:51,750 | server.py:236 | fit_round 80 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:52,240 | server.py:173 | evaluate_round 80: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:36:59,203 | server.py:187 | evaluate_round 80 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:36:59,203 | server.py:222 | fit_round 81: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:02,397 | server.py:236 | fit_round 81 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:02,882 | server.py:173 | evaluate_round 81: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:10,037 | server.py:187 | evaluate_round 81 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:10,038 | server.py:222 | fit_round 82: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:13,726 | server.py:236 | fit_round 82 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:14,195 | server.py:173 | evaluate_round 82: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:21,127 | server.py:187 | evaluate_round 82 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:21,127 | server.py:222 | fit_round 83: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:24,486 | server.py:236 | fit_round 83 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:24,986 | server.py:173 | evaluate_round 83: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:32,074 | server.py:187 | evaluate_round 83 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:32,074 | server.py:222 | fit_round 84: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:35,519 | server.py:236 | fit_round 84 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:36,045 | server.py:173 | evaluate_round 84: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:43,162 | server.py:187 | evaluate_round 84 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:43,162 | server.py:222 | fit_round 85: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:46,414 | server.py:236 | fit_round 85 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:46,975 | server.py:173 | evaluate_round 85: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:54,062 | server.py:187 | evaluate_round 85 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:54,062 | server.py:222 | fit_round 86: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:37:57,252 | server.py:236 | fit_round 86 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:37:57,747 | server.py:173 | evaluate_round 86: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:04,913 | server.py:187 | evaluate_round 86 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:04,914 | server.py:222 | fit_round 87: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:08,517 | server.py:236 | fit_round 87 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:09,042 | server.py:173 | evaluate_round 87: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:16,245 | server.py:187 | evaluate_round 87 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:16,245 | server.py:222 | fit_round 88: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:19,792 | server.py:236 | fit_round 88 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:20,298 | server.py:173 | evaluate_round 88: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:27,537 | server.py:187 | evaluate_round 88 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:27,537 | server.py:222 | fit_round 89: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:30,852 | server.py:236 | fit_round 89 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:31,337 | server.py:173 | evaluate_round 89: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:38,336 | server.py:187 | evaluate_round 89 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:38,336 | server.py:222 | fit_round 90: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:41,678 | server.py:236 | fit_round 90 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:42,193 | server.py:173 | evaluate_round 90: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:49,481 | server.py:187 | evaluate_round 90 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:49,481 | server.py:222 | fit_round 91: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:38:53,035 | server.py:236 | fit_round 91 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:38:53,534 | server.py:173 | evaluate_round 91: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:00,651 | server.py:187 | evaluate_round 91 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:00,651 | server.py:222 | fit_round 92: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:03,789 | server.py:236 | fit_round 92 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:04,271 | server.py:173 | evaluate_round 92: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:11,340 | server.py:187 | evaluate_round 92 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:11,341 | server.py:222 | fit_round 93: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:14,596 | server.py:236 | fit_round 93 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:15,112 | server.py:173 | evaluate_round 93: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:22,171 | server.py:187 | evaluate_round 93 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:22,172 | server.py:222 | fit_round 94: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:25,336 | server.py:236 | fit_round 94 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:25,800 | server.py:173 | evaluate_round 94: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:32,894 | server.py:187 | evaluate_round 94 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:32,895 | server.py:222 | fit_round 95: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:36,283 | server.py:236 | fit_round 95 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:36,765 | server.py:173 | evaluate_round 95: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:43,782 | server.py:187 | evaluate_round 95 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:43,783 | server.py:222 | fit_round 96: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:47,361 | server.py:236 | fit_round 96 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:47,820 | server.py:173 | evaluate_round 96: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:54,901 | server.py:187 | evaluate_round 96 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:54,901 | server.py:222 | fit_round 97: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:39:58,169 | server.py:236 | fit_round 97 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:39:58,631 | server.py:173 | evaluate_round 97: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:05,781 | server.py:187 | evaluate_round 97 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:40:05,781 | server.py:222 | fit_round 98: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:08,934 | server.py:236 | fit_round 98 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:40:09,402 | server.py:173 | evaluate_round 98: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:16,549 | server.py:187 | evaluate_round 98 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:40:16,549 | server.py:222 | fit_round 99: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:19,764 | server.py:236 | fit_round 99 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:40:20,252 | server.py:173 | evaluate_round 99: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:27,450 | server.py:187 | evaluate_round 99 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:40:27,450 | server.py:222 | fit_round 100: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:31,103 | server.py:236 | fit_round 100 received 2 results and 0 failures
+DEBUG flwr 2023-12-18 00:40:31,592 | server.py:173 | evaluate_round 100: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2023-12-18 00:40:38,585 | server.py:187 | evaluate_round 100 received 2 results and 0 failures
+INFO flwr 2023-12-18 00:40:38,585 | server.py:153 | FL finished in 1095.372226331383
+INFO flwr 2023-12-18 00:40:38,604 | app.py:226 | app_fit: losses_distributed [(1, 0.6928007900714874), (2, 0.6920644044876099), (3, 0.7111580967903137), (4, 0.6910520792007446), (5, 0.6610105037689209), (6, 0.6926523447036743), (7, 0.6918333172798157), (8, 0.7223697006702423), (9, 0.6594102382659912), (10, 0.6874092519283295), (11, 0.6574517488479614), (12, 0.696814239025116), (13, 0.7263155579566956), (14, 0.6572239100933075), (15, 0.6905398368835449), (16, 0.6471530497074127), (17, 0.6479439437389374), (18, 0.6971467733383179), (19, 0.6431642174720764), (20, 0.638539046049118), (21, 0.6954678595066071), (22, 0.6250105202198029), (23, 0.697954535484314), (24, 0.7937242388725281), (25, 0.6955058872699738), (26, 0.6932564377784729), (27, 0.6044268608093262), (28, 0.5918174982070923), (29, 0.5949856340885162), (30, 0.702941358089447), (31, 0.7965304255485535), (32, 0.599158376455307), (33, 0.5887009501457214), (34, 0.5736932754516602), (35, 0.5786307752132416), (36, 0.5883753895759583), (37, 0.6966896653175354), (38, 0.8317467570304871), (39, 0.5710426270961761), (40, 0.8093140125274658), (41, 0.5941622257232666), (42, 0.7014000415802002), (43, 0.5507715940475464), (44, 0.5503376722335815), (45, 0.7040160298347473), (46, 0.5457862615585327), (47, 0.7353793978691101), (48, 0.7158051133155823), (49, 0.7071028649806976), (50, 0.5421598255634308), (51, 0.5357360541820526), (52, 0.7090481817722321), (53, 0.6932699680328369), (54, 0.535294383764267), (55, 0.7079445421695709), (56, 0.5129532814025879), (57, 0.7069122791290283), (58, 0.5229855179786682), (59, 0.5240634381771088), (60, 0.7061731219291687), (61, 0.926146388053894), (62, 0.9544742703437805), (63, 0.49645161628723145), (64, 0.4893430471420288), (65, 0.7299798429012299), (66, 0.7108559310436249), (67, 0.7185068726539612), (68, 0.727029338479042), (69, 0.48057740926742554), (70, 0.9769121706485748), (71, 0.48872970044612885), (72, 0.47740335762500763), (73, 0.7138468325138092), (74, 0.709760993719101), (75, 0.4610428512096405), (76, 0.47729772329330444), (77, 0.9801455140113831), (78, 0.4643677622079849), (79, 0.7295947968959808), (80, 0.7189640998840332), (81, 0.7234030067920685), (82, 0.9922715425491333), (83, 0.7467572093009949), (84, 0.7140711843967438), (85, 0.7203804552555084), (86, 0.44959305226802826), (87, 0.4539369195699692), (88, 0.4466606676578522), (89, 0.721646174788475), (90, 0.4383949190378189), (91, 0.7355727553367615), (92, 0.46377837657928467), (93, 0.7536256313323975), (94, 0.9900921583175659), (95, 0.457787424325943), (96, 0.9710041582584381), (97, 0.7311989963054657), (98, 0.7165252566337585), (99, 0.7319337874650955), (100, 0.46431079506874084)]
+INFO flwr 2023-12-18 00:40:38,604 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2023-12-18 00:40:38,604 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2023-12-18 00:40:38,604 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2023-12-18 00:40:38,604 | app.py:230 | app_fit: metrics_centralized {}
+DEBUG flwr 2023-12-18 00:40:38,637 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 00:40:38,637 | app.py:304 | Disconnect and shut down
+Total time taken:  1112.9026441574097
+DEBUG flwr 2023-12-18 00:40:38,668 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 00:40:38,668 | app.py:304 | Disconnect and shut down
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)

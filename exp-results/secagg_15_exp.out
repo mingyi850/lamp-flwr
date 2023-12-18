@@ -1,0 +1,2169 @@
+INFO flwr 2023-12-18 02:04:11,846 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=100, round_timeout=None)
+INFO flwr 2023-12-18 02:04:11,867 | app.py:176 | Flower ECE: gRPC server running (100 rounds), SSL is disabled
+INFO flwr 2023-12-18 02:04:11,868 | server.py:89 | Initializing global parameters
+INFO flwr 2023-12-18 02:04:11,868 | server.py:276 | Requesting initial parameters from one random client
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 8, in <module>
+    import secagg
+  File "/scratch/ml9027/ming/lamp-main/secagg.py", line 147, in <module>
+    tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased', use_fast=True)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 549, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/tokenization_utils_base.py", line 1692, in from_pretrained
+    resolved_vocab_files[file_id] = cached_path(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/file_utils.py", line 1625, in cached_path
+    output_path = get_from_cache(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/transformers/file_utils.py", line 1849, in get_from_cache
+    raise ValueError(
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.weight', 'fit_denses.6.bias', 'cls.seq_relationship.bias', 'fit_denses.4.weight', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.0.weight', 'fit_denses.1.weight', 'fit_denses.2.bias', 'fit_denses.1.bias', 'cls.predictions.decoder.weight', 'fit_denses.2.weight', 'fit_denses.4.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.0.bias', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.4.bias', 'fit_denses.2.bias', 'fit_denses.1.weight', 'fit_denses.4.weight', 'fit_denses.3.bias', 'fit_denses.2.weight', 'cls.predictions.bias', 'fit_denses.1.bias', 'fit_denses.6.bias', 'fit_denses.0.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.3.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.bias', 'cls.predictions.decoder.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.5.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'fit_denses.2.weight', 'fit_denses.2.bias', 'fit_denses.5.weight', 'fit_denses.3.weight', 'cls.predictions.decoder.weight', 'fit_denses.3.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.0.bias', 'fit_denses.5.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.weight', 'cls.predictions.bias', 'fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.1.bias', 'fit_denses.2.bias', 'fit_denses.0.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.4.weight', 'fit_denses.6.bias', 'fit_denses.3.bias', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'fit_denses.5.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'fit_denses.5.bias', 'fit_denses.6.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'fit_denses.1.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.bias', 'fit_denses.1.weight', 'cls.predictions.decoder.weight', 'fit_denses.5.weight', 'fit_denses.2.weight', 'fit_denses.4.weight', 'fit_denses.0.bias', 'fit_denses.3.bias', 'fit_denses.6.bias', 'cls.seq_relationship.weight', 'fit_denses.2.bias', 'cls.predictions.bias', 'fit_denses.3.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.4.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.weight', 'fit_denses.5.bias', 'fit_denses.1.bias', 'fit_denses.5.weight', 'fit_denses.0.bias', 'cls.seq_relationship.bias', 'fit_denses.2.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.1.weight', 'fit_denses.6.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.weight', 'fit_denses.0.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.bias', 'fit_denses.4.bias', 'fit_denses.2.weight', 'fit_denses.6.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'fit_denses.4.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.6.weight', 'fit_denses.0.weight', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.weight', 'cls.predictions.decoder.weight', 'fit_denses.2.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.4.bias', 'fit_denses.3.weight', 'fit_denses.5.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.0.bias', 'fit_denses.1.bias', 'fit_denses.3.bias', 'fit_denses.5.bias', 'fit_denses.1.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.weight', 'cls.predictions.decoder.weight', 'fit_denses.3.weight', 'fit_denses.6.weight', 'cls.predictions.bias', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight', 'fit_denses.0.bias', 'cls.seq_relationship.weight', 'fit_denses.3.bias', 'fit_denses.6.bias', 'fit_denses.4.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'fit_denses.5.weight', 'fit_denses.1.bias', 'fit_denses.4.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.1.bias', 'fit_denses.1.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.2.bias', 'fit_denses.6.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.5.weight', 'fit_denses.3.bias', 'fit_denses.3.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.2.weight', 'fit_denses.6.bias', 'fit_denses.4.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'fit_denses.1.weight', 'fit_denses.0.weight', 'fit_denses.4.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'fit_denses.4.weight', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.5.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.2.weight', 'fit_denses.3.bias', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'fit_denses.1.bias', 'fit_denses.2.bias', 'fit_denses.3.weight', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.4.weight', 'fit_denses.1.bias', 'fit_denses.5.bias', 'fit_denses.0.bias', 'fit_denses.6.bias', 'fit_denses.6.weight', 'cls.predictions.bias', 'fit_denses.2.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.weight', 'fit_denses.5.weight', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.0.weight', 'fit_denses.1.weight', 'fit_denses.4.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.2.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.4.bias', 'cls.seq_relationship.weight', 'fit_denses.3.weight', 'fit_denses.6.weight', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.3.bias', 'fit_denses.5.bias', 'fit_denses.1.bias', 'fit_denses.6.bias', 'fit_denses.0.bias', 'fit_denses.4.weight', 'fit_denses.2.weight', 'fit_denses.1.weight', 'fit_denses.2.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.weight', 'fit_denses.5.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.weight', 'cls.predictions.bias', 'fit_denses.0.weight', 'fit_denses.3.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.1.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.5.weight', 'fit_denses.3.weight', 'fit_denses.2.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.1.weight', 'fit_denses.6.bias', 'cls.predictions.decoder.weight', 'fit_denses.2.weight', 'fit_denses.4.bias', 'cls.seq_relationship.bias', 'fit_denses.0.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.1.weight', 'cls.predictions.bias', 'fit_denses.4.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.5.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.6.weight', 'fit_denses.0.weight', 'cls.predictions.decoder.weight', 'fit_denses.1.bias', 'fit_denses.2.bias', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.2.weight', 'fit_denses.4.bias', 'fit_denses.0.bias', 'cls.seq_relationship.weight', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.5.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.2.weight', 'fit_denses.5.bias', 'cls.predictions.bias', 'fit_denses.6.bias', 'fit_denses.2.bias', 'fit_denses.4.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.1.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.weight', 'fit_denses.3.bias', 'fit_denses.1.weight', 'fit_denses.0.weight', 'fit_denses.3.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.4.bias', 'fit_denses.0.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 367.62it/s]
+100%|██████████| 3/3 [00:00<00:00, 349.14it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 754.37it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+100%|██████████| 3/3 [00:00<00:00, 140.23it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 862.26it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+100%|██████████| 3/3 [00:00<00:00, 139.96it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+INFO flwr 2023-12-18 02:07:01,287 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 619.36it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+INFO flwr 2023-12-18 02:07:01,348 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+  0%|          | 0/3 [00:00<?, ?it/s]Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+100%|██████████| 3/3 [00:00<00:00, 658.79it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+100%|██████████| 3/3 [00:00<00:00, 295.26it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+100%|██████████| 3/3 [00:00<00:00, 258.84it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 204.89it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+100%|██████████| 3/3 [00:00<00:00, 122.61it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+100%|██████████| 3/3 [00:00<00:00, 87.71it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+100%|██████████| 3/3 [00:00<00:00, 70.34it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+100%|██████████| 3/3 [00:00<00:00, 56.17it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+INFO flwr 2023-12-18 02:07:01,812 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:01,819 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:01,874 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:01,948 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:02,016 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:02,078 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:02,081 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 02:07:02,128 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,147 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,185 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,185 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:02,197 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,197 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,385 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,385 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,385 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,387 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 02:07:02,401 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 02:07:02,402 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:02,448 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 02:07:02,485 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:02,499 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 02:07:02,567 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:02,569 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:02,571 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,588 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 02:07:02,606 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+INFO flwr 2023-12-18 02:07:02,648 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 02:07:02,725 | connection.py:42 | ChannelConnectivity.IDLE
+INFO flwr 2023-12-18 02:07:02,739 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 02:07:02,740 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,741 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,759 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,874 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,875 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,875 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,875 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:02,906 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:02,906 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:03,008 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:03,008 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:03,042 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:03,043 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:03,043 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:03,077 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:03,211 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 02:07:03,211 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 02:07:03,335 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,335 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,335 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,335 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,336 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,336 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,336 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,337 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,412 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 02:07:03,751 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 02:07:06,263 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2023-12-18 02:07:06,263 | server.py:91 | Evaluating initial parameters
+INFO flwr 2023-12-18 02:07:06,263 | server.py:104 | FL starting
+DEBUG flwr 2023-12-18 02:07:06,263 | server.py:222 | fit_round 1: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:08:01,176 | server.py:236 | fit_round 1 received 15 results and 0 failures
+WARNING flwr 2023-12-18 02:08:06,141 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2023-12-18 02:08:06,151 | server.py:173 | evaluate_round 1: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:10:29,276 | server.py:187 | evaluate_round 1 received 15 results and 0 failures
+WARNING flwr 2023-12-18 02:10:29,296 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2023-12-18 02:10:29,296 | server.py:222 | fit_round 2: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:11:47,777 | server.py:236 | fit_round 2 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:11:53,321 | server.py:173 | evaluate_round 2: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:14:09,087 | server.py:187 | evaluate_round 2 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:14:09,087 | server.py:222 | fit_round 3: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:15:24,640 | server.py:236 | fit_round 3 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:15:29,611 | server.py:173 | evaluate_round 3: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:17:48,327 | server.py:187 | evaluate_round 3 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:17:48,327 | server.py:222 | fit_round 4: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:19:06,431 | server.py:236 | fit_round 4 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:19:10,755 | server.py:173 | evaluate_round 4: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:21:31,568 | server.py:187 | evaluate_round 4 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:21:31,568 | server.py:222 | fit_round 5: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:22:51,541 | server.py:236 | fit_round 5 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:22:55,659 | server.py:173 | evaluate_round 5: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:25:15,946 | server.py:187 | evaluate_round 5 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:25:15,946 | server.py:222 | fit_round 6: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:26:36,128 | server.py:236 | fit_round 6 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:26:40,454 | server.py:173 | evaluate_round 6: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:28:59,102 | server.py:187 | evaluate_round 6 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:28:59,102 | server.py:222 | fit_round 7: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:30:17,169 | server.py:236 | fit_round 7 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:30:20,792 | server.py:173 | evaluate_round 7: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:32:41,208 | server.py:187 | evaluate_round 7 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:32:41,209 | server.py:222 | fit_round 8: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:33:59,359 | server.py:236 | fit_round 8 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:34:04,244 | server.py:173 | evaluate_round 8: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:36:22,215 | server.py:187 | evaluate_round 8 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:36:22,216 | server.py:222 | fit_round 9: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:37:39,758 | server.py:236 | fit_round 9 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:37:44,097 | server.py:173 | evaluate_round 9: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:40:02,331 | server.py:187 | evaluate_round 9 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:40:02,331 | server.py:222 | fit_round 10: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:41:21,059 | server.py:236 | fit_round 10 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:41:25,116 | server.py:173 | evaluate_round 10: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:43:44,221 | server.py:187 | evaluate_round 10 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:43:44,221 | server.py:222 | fit_round 11: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:45:02,597 | server.py:236 | fit_round 11 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:45:06,990 | server.py:173 | evaluate_round 11: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:47:26,665 | server.py:187 | evaluate_round 11 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:47:26,665 | server.py:222 | fit_round 12: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:48:47,255 | server.py:236 | fit_round 12 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:48:50,999 | server.py:173 | evaluate_round 12: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:51:10,746 | server.py:187 | evaluate_round 12 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:51:10,746 | server.py:222 | fit_round 13: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:52:29,755 | server.py:236 | fit_round 13 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:52:34,267 | server.py:173 | evaluate_round 13: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:54:53,716 | server.py:187 | evaluate_round 13 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:54:53,716 | server.py:222 | fit_round 14: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:56:11,377 | server.py:236 | fit_round 14 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:56:15,848 | server.py:173 | evaluate_round 14: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:58:33,916 | server.py:187 | evaluate_round 14 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:58:33,916 | server.py:222 | fit_round 15: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 02:59:51,656 | server.py:236 | fit_round 15 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 02:59:55,679 | server.py:173 | evaluate_round 15: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:02:12,772 | server.py:187 | evaluate_round 15 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:02:12,773 | server.py:222 | fit_round 16: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:03:29,817 | server.py:236 | fit_round 16 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:03:34,491 | server.py:173 | evaluate_round 16: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:05:52,022 | server.py:187 | evaluate_round 16 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:05:52,023 | server.py:222 | fit_round 17: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:07:09,385 | server.py:236 | fit_round 17 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:07:13,275 | server.py:173 | evaluate_round 17: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:09:31,725 | server.py:187 | evaluate_round 17 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:09:31,725 | server.py:222 | fit_round 18: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:10:49,719 | server.py:236 | fit_round 18 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:10:54,033 | server.py:173 | evaluate_round 18: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:13:12,595 | server.py:187 | evaluate_round 18 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:13:12,619 | server.py:222 | fit_round 19: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:14:30,766 | server.py:236 | fit_round 19 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:14:35,210 | server.py:173 | evaluate_round 19: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:16:53,468 | server.py:187 | evaluate_round 19 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:16:53,468 | server.py:222 | fit_round 20: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:18:11,574 | server.py:236 | fit_round 20 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:18:15,787 | server.py:173 | evaluate_round 20: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:20:34,874 | server.py:187 | evaluate_round 20 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:20:34,875 | server.py:222 | fit_round 21: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:21:53,697 | server.py:236 | fit_round 21 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:21:58,208 | server.py:173 | evaluate_round 21: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:24:16,839 | server.py:187 | evaluate_round 21 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:24:16,839 | server.py:222 | fit_round 22: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:25:36,213 | server.py:236 | fit_round 22 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:25:39,974 | server.py:173 | evaluate_round 22: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:27:58,629 | server.py:187 | evaluate_round 22 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:27:58,629 | server.py:222 | fit_round 23: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:29:17,614 | server.py:236 | fit_round 23 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:29:22,248 | server.py:173 | evaluate_round 23: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:31:41,820 | server.py:187 | evaluate_round 23 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:31:41,820 | server.py:222 | fit_round 24: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:33:01,261 | server.py:236 | fit_round 24 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:33:05,729 | server.py:173 | evaluate_round 24: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:35:24,479 | server.py:187 | evaluate_round 24 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:35:24,480 | server.py:222 | fit_round 25: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:36:44,959 | server.py:236 | fit_round 25 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:36:48,793 | server.py:173 | evaluate_round 25: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:39:07,575 | server.py:187 | evaluate_round 25 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:39:07,576 | server.py:222 | fit_round 26: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:40:26,537 | server.py:236 | fit_round 26 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:40:30,912 | server.py:173 | evaluate_round 26: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:42:50,211 | server.py:187 | evaluate_round 26 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:42:50,211 | server.py:222 | fit_round 27: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:44:08,328 | server.py:236 | fit_round 27 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:44:12,058 | server.py:173 | evaluate_round 27: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:46:29,493 | server.py:187 | evaluate_round 27 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:46:29,493 | server.py:222 | fit_round 28: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:47:46,747 | server.py:236 | fit_round 28 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:47:51,406 | server.py:173 | evaluate_round 28: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:50:09,760 | server.py:187 | evaluate_round 28 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:50:09,761 | server.py:222 | fit_round 29: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:51:28,676 | server.py:236 | fit_round 29 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:51:33,057 | server.py:173 | evaluate_round 29: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:53:51,078 | server.py:187 | evaluate_round 29 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:53:51,078 | server.py:222 | fit_round 30: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:55:07,881 | server.py:236 | fit_round 30 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:55:11,731 | server.py:173 | evaluate_round 30: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:57:31,206 | server.py:187 | evaluate_round 30 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:57:31,207 | server.py:222 | fit_round 31: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 03:58:49,352 | server.py:236 | fit_round 31 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 03:58:54,015 | server.py:173 | evaluate_round 31: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:01:14,989 | server.py:187 | evaluate_round 31 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:01:14,989 | server.py:222 | fit_round 32: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:02:17,945 | server.py:236 | fit_round 32 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:02:21,821 | server.py:173 | evaluate_round 32: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:04:30,893 | server.py:187 | evaluate_round 32 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:04:30,893 | server.py:222 | fit_round 33: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:05:32,226 | server.py:236 | fit_round 33 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:05:37,895 | server.py:173 | evaluate_round 33: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:07:46,703 | server.py:187 | evaluate_round 33 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:07:46,704 | server.py:222 | fit_round 34: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:08:48,718 | server.py:236 | fit_round 34 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:08:52,226 | server.py:173 | evaluate_round 34: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:11:01,273 | server.py:187 | evaluate_round 34 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:11:01,274 | server.py:222 | fit_round 35: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:12:03,196 | server.py:236 | fit_round 35 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:12:07,570 | server.py:173 | evaluate_round 35: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:14:15,599 | server.py:187 | evaluate_round 35 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:14:15,599 | server.py:222 | fit_round 36: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:15:17,002 | server.py:236 | fit_round 36 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:15:20,635 | server.py:173 | evaluate_round 36: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:17:28,661 | server.py:187 | evaluate_round 36 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:17:28,661 | server.py:222 | fit_round 37: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:18:31,918 | server.py:236 | fit_round 37 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:18:36,532 | server.py:173 | evaluate_round 37: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:20:44,753 | server.py:187 | evaluate_round 37 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:20:44,778 | server.py:222 | fit_round 38: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:21:47,094 | server.py:236 | fit_round 38 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:21:50,941 | server.py:173 | evaluate_round 38: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:23:59,384 | server.py:187 | evaluate_round 38 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:23:59,384 | server.py:222 | fit_round 39: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:25:01,568 | server.py:236 | fit_round 39 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:25:05,702 | server.py:173 | evaluate_round 39: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:27:13,870 | server.py:187 | evaluate_round 39 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:27:13,871 | server.py:222 | fit_round 40: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:28:14,187 | server.py:236 | fit_round 40 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:28:17,815 | server.py:173 | evaluate_round 40: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:30:25,898 | server.py:187 | evaluate_round 40 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:30:25,898 | server.py:222 | fit_round 41: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:31:28,025 | server.py:236 | fit_round 41 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:31:31,785 | server.py:173 | evaluate_round 41: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:33:39,703 | server.py:187 | evaluate_round 41 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:33:39,703 | server.py:222 | fit_round 42: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:34:40,158 | server.py:236 | fit_round 42 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:34:44,110 | server.py:173 | evaluate_round 42: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:36:51,584 | server.py:187 | evaluate_round 42 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:36:51,584 | server.py:222 | fit_round 43: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:37:52,990 | server.py:236 | fit_round 43 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:37:56,581 | server.py:173 | evaluate_round 43: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:40:04,642 | server.py:187 | evaluate_round 43 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:40:04,642 | server.py:222 | fit_round 44: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:41:05,079 | server.py:236 | fit_round 44 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:41:09,841 | server.py:173 | evaluate_round 44: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:43:37,710 | server.py:187 | evaluate_round 44 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:43:37,730 | server.py:222 | fit_round 45: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:44:49,787 | server.py:236 | fit_round 45 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:44:53,709 | server.py:173 | evaluate_round 45: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:47:28,369 | server.py:187 | evaluate_round 45 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:47:28,369 | server.py:222 | fit_round 46: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:48:30,762 | server.py:236 | fit_round 46 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:48:34,904 | server.py:173 | evaluate_round 46: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:50:43,288 | server.py:187 | evaluate_round 46 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:50:43,288 | server.py:222 | fit_round 47: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:51:45,744 | server.py:236 | fit_round 47 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:51:49,287 | server.py:173 | evaluate_round 47: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:53:57,822 | server.py:187 | evaluate_round 47 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:53:57,823 | server.py:222 | fit_round 48: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:54:59,614 | server.py:236 | fit_round 48 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:55:04,406 | server.py:173 | evaluate_round 48: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:57:12,846 | server.py:187 | evaluate_round 48 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:57:12,846 | server.py:222 | fit_round 49: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 04:58:14,650 | server.py:236 | fit_round 49 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 04:58:18,074 | server.py:173 | evaluate_round 49: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:00:25,862 | server.py:187 | evaluate_round 49 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:00:25,862 | server.py:222 | fit_round 50: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:01:26,109 | server.py:236 | fit_round 50 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:01:30,774 | server.py:173 | evaluate_round 50: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:03:38,594 | server.py:187 | evaluate_round 50 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:03:38,594 | server.py:222 | fit_round 51: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:04:39,468 | server.py:236 | fit_round 51 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:04:42,856 | server.py:173 | evaluate_round 51: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:06:50,524 | server.py:187 | evaluate_round 51 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:06:50,525 | server.py:222 | fit_round 52: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:07:51,452 | server.py:236 | fit_round 52 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:07:55,756 | server.py:173 | evaluate_round 52: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:10:03,626 | server.py:187 | evaluate_round 52 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:10:03,626 | server.py:222 | fit_round 53: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:11:05,644 | server.py:236 | fit_round 53 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:11:09,288 | server.py:173 | evaluate_round 53: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:13:17,770 | server.py:187 | evaluate_round 53 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:13:17,770 | server.py:222 | fit_round 54: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:14:20,720 | server.py:236 | fit_round 54 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:14:25,230 | server.py:173 | evaluate_round 54: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:16:41,390 | server.py:187 | evaluate_round 54 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:16:41,390 | server.py:222 | fit_round 55: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:17:45,261 | server.py:236 | fit_round 55 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:17:48,960 | server.py:173 | evaluate_round 55: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:20:05,057 | server.py:187 | evaluate_round 55 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:20:05,057 | server.py:222 | fit_round 56: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:21:12,311 | server.py:236 | fit_round 56 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:21:17,025 | server.py:173 | evaluate_round 56: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:23:38,788 | server.py:187 | evaluate_round 56 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:23:38,788 | server.py:222 | fit_round 57: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:24:46,334 | server.py:236 | fit_round 57 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:24:50,319 | server.py:173 | evaluate_round 57: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:27:12,450 | server.py:187 | evaluate_round 57 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:27:12,451 | server.py:222 | fit_round 58: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:28:21,156 | server.py:236 | fit_round 58 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:28:25,741 | server.py:173 | evaluate_round 58: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:30:46,942 | server.py:187 | evaluate_round 58 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:30:46,942 | server.py:222 | fit_round 59: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:31:54,863 | server.py:236 | fit_round 59 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:31:59,523 | server.py:173 | evaluate_round 59: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:34:21,833 | server.py:187 | evaluate_round 59 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:34:21,834 | server.py:222 | fit_round 60: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:35:30,766 | server.py:236 | fit_round 60 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:35:35,453 | server.py:173 | evaluate_round 60: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:37:57,166 | server.py:187 | evaluate_round 60 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:37:57,166 | server.py:222 | fit_round 61: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:39:05,396 | server.py:236 | fit_round 61 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:39:09,188 | server.py:173 | evaluate_round 61: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:41:31,090 | server.py:187 | evaluate_round 61 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:41:31,091 | server.py:222 | fit_round 62: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:42:40,147 | server.py:236 | fit_round 62 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:42:45,110 | server.py:173 | evaluate_round 62: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:45:07,404 | server.py:187 | evaluate_round 62 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:45:07,404 | server.py:222 | fit_round 63: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:46:15,323 | server.py:236 | fit_round 63 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:46:19,188 | server.py:173 | evaluate_round 63: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:48:40,199 | server.py:187 | evaluate_round 63 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:48:40,200 | server.py:222 | fit_round 64: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:49:48,512 | server.py:236 | fit_round 64 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:49:53,256 | server.py:173 | evaluate_round 64: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:52:14,322 | server.py:187 | evaluate_round 64 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:52:14,323 | server.py:222 | fit_round 65: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:53:21,686 | server.py:236 | fit_round 65 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:53:26,217 | server.py:173 | evaluate_round 65: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:55:46,864 | server.py:187 | evaluate_round 65 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:55:46,864 | server.py:222 | fit_round 66: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:56:52,818 | server.py:236 | fit_round 66 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:56:57,520 | server.py:173 | evaluate_round 66: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 05:59:18,700 | server.py:187 | evaluate_round 66 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 05:59:18,716 | server.py:222 | fit_round 67: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:00:26,399 | server.py:236 | fit_round 67 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:00:30,235 | server.py:173 | evaluate_round 67: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:02:51,857 | server.py:187 | evaluate_round 67 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:02:51,857 | server.py:222 | fit_round 68: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:03:59,408 | server.py:236 | fit_round 68 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:04:03,991 | server.py:173 | evaluate_round 68: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:06:25,209 | server.py:187 | evaluate_round 68 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:06:25,210 | server.py:222 | fit_round 69: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:07:33,532 | server.py:236 | fit_round 69 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:07:37,614 | server.py:173 | evaluate_round 69: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:09:59,987 | server.py:187 | evaluate_round 69 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:09:59,987 | server.py:222 | fit_round 70: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:11:09,753 | server.py:236 | fit_round 70 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:11:14,459 | server.py:173 | evaluate_round 70: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:13:38,749 | server.py:187 | evaluate_round 70 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:13:38,749 | server.py:222 | fit_round 71: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:14:48,567 | server.py:236 | fit_round 71 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:14:53,098 | server.py:173 | evaluate_round 71: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:17:18,016 | server.py:187 | evaluate_round 71 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:17:18,016 | server.py:222 | fit_round 72: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:18:28,718 | server.py:236 | fit_round 72 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:18:33,187 | server.py:173 | evaluate_round 72: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:20:57,140 | server.py:187 | evaluate_round 72 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:20:57,140 | server.py:222 | fit_round 73: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:22:06,235 | server.py:236 | fit_round 73 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:22:10,211 | server.py:173 | evaluate_round 73: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:24:35,081 | server.py:187 | evaluate_round 73 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:24:35,082 | server.py:222 | fit_round 74: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:25:44,904 | server.py:236 | fit_round 74 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:25:49,693 | server.py:173 | evaluate_round 74: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:28:14,274 | server.py:187 | evaluate_round 74 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:28:14,274 | server.py:222 | fit_round 75: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:29:24,034 | server.py:236 | fit_round 75 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:29:27,880 | server.py:173 | evaluate_round 75: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:31:52,271 | server.py:187 | evaluate_round 75 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:31:52,272 | server.py:222 | fit_round 76: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:33:01,817 | server.py:236 | fit_round 76 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:33:06,555 | server.py:173 | evaluate_round 76: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:35:31,479 | server.py:187 | evaluate_round 76 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:35:31,479 | server.py:222 | fit_round 77: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:36:40,707 | server.py:236 | fit_round 77 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:36:44,588 | server.py:173 | evaluate_round 77: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:39:09,923 | server.py:187 | evaluate_round 77 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:39:09,923 | server.py:222 | fit_round 78: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:40:19,987 | server.py:236 | fit_round 78 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:40:25,332 | server.py:173 | evaluate_round 78: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:42:47,937 | server.py:187 | evaluate_round 78 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:42:47,937 | server.py:222 | fit_round 79: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:43:55,648 | server.py:236 | fit_round 79 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:43:59,981 | server.py:173 | evaluate_round 79: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:46:22,332 | server.py:187 | evaluate_round 79 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:46:22,332 | server.py:222 | fit_round 80: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:47:26,383 | server.py:236 | fit_round 80 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:47:30,960 | server.py:173 | evaluate_round 80: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:49:46,735 | server.py:187 | evaluate_round 80 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:49:46,735 | server.py:222 | fit_round 81: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:50:51,177 | server.py:236 | fit_round 81 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:50:55,274 | server.py:173 | evaluate_round 81: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:53:11,092 | server.py:187 | evaluate_round 81 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:53:11,093 | server.py:222 | fit_round 82: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:54:14,446 | server.py:236 | fit_round 82 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:54:18,878 | server.py:173 | evaluate_round 82: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:56:33,412 | server.py:187 | evaluate_round 82 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:56:33,412 | server.py:222 | fit_round 83: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:57:36,511 | server.py:236 | fit_round 83 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:57:40,755 | server.py:173 | evaluate_round 83: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 06:59:55,344 | server.py:187 | evaluate_round 83 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 06:59:55,344 | server.py:222 | fit_round 84: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:00:57,449 | server.py:236 | fit_round 84 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:01:02,085 | server.py:173 | evaluate_round 84: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:03:15,849 | server.py:187 | evaluate_round 84 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:03:15,850 | server.py:222 | fit_round 85: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:04:18,595 | server.py:236 | fit_round 85 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:04:22,034 | server.py:173 | evaluate_round 85: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:06:36,158 | server.py:187 | evaluate_round 85 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:06:36,159 | server.py:222 | fit_round 86: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:07:38,480 | server.py:236 | fit_round 86 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:07:43,455 | server.py:173 | evaluate_round 86: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:09:54,210 | server.py:187 | evaluate_round 86 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:09:54,211 | server.py:222 | fit_round 87: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:10:57,043 | server.py:236 | fit_round 87 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:11:00,429 | server.py:173 | evaluate_round 87: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:13:08,666 | server.py:187 | evaluate_round 87 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:13:08,666 | server.py:222 | fit_round 88: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:14:10,410 | server.py:236 | fit_round 88 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:14:15,129 | server.py:173 | evaluate_round 88: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:16:22,962 | server.py:187 | evaluate_round 88 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:16:22,962 | server.py:222 | fit_round 89: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:17:23,666 | server.py:236 | fit_round 89 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:17:26,958 | server.py:173 | evaluate_round 89: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:19:35,361 | server.py:187 | evaluate_round 89 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:19:35,362 | server.py:222 | fit_round 90: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:20:37,458 | server.py:236 | fit_round 90 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:20:41,416 | server.py:173 | evaluate_round 90: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:22:49,190 | server.py:187 | evaluate_round 90 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:22:49,190 | server.py:222 | fit_round 91: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:23:50,789 | server.py:236 | fit_round 91 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:23:54,182 | server.py:173 | evaluate_round 91: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:26:02,216 | server.py:187 | evaluate_round 91 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:26:02,217 | server.py:222 | fit_round 92: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:27:04,629 | server.py:236 | fit_round 92 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:27:08,385 | server.py:173 | evaluate_round 92: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:29:16,284 | server.py:187 | evaluate_round 92 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:29:16,284 | server.py:222 | fit_round 93: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:30:17,262 | server.py:236 | fit_round 93 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:30:21,161 | server.py:173 | evaluate_round 93: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:32:29,111 | server.py:187 | evaluate_round 93 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:32:29,111 | server.py:222 | fit_round 94: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:33:30,812 | server.py:236 | fit_round 94 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:33:35,007 | server.py:173 | evaluate_round 94: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:35:43,068 | server.py:187 | evaluate_round 94 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:35:43,068 | server.py:222 | fit_round 95: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:36:43,942 | server.py:236 | fit_round 95 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:36:47,958 | server.py:173 | evaluate_round 95: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:38:55,744 | server.py:187 | evaluate_round 95 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:38:55,744 | server.py:222 | fit_round 96: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:39:57,550 | server.py:236 | fit_round 96 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:40:01,564 | server.py:173 | evaluate_round 96: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:42:09,686 | server.py:187 | evaluate_round 96 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:42:09,686 | server.py:222 | fit_round 97: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:43:09,777 | server.py:236 | fit_round 97 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:43:14,031 | server.py:173 | evaluate_round 97: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:45:22,031 | server.py:187 | evaluate_round 97 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:45:22,031 | server.py:222 | fit_round 98: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:46:23,211 | server.py:236 | fit_round 98 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:46:26,637 | server.py:173 | evaluate_round 98: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:48:34,488 | server.py:187 | evaluate_round 98 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:48:34,489 | server.py:222 | fit_round 99: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:49:35,773 | server.py:236 | fit_round 99 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:49:40,085 | server.py:173 | evaluate_round 99: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:51:47,417 | server.py:187 | evaluate_round 99 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:51:47,417 | server.py:222 | fit_round 100: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:52:47,441 | server.py:236 | fit_round 100 received 15 results and 0 failures
+DEBUG flwr 2023-12-18 07:52:50,770 | server.py:173 | evaluate_round 100: strategy sampled 15 clients (out of 15)
+DEBUG flwr 2023-12-18 07:54:58,740 | server.py:187 | evaluate_round 100 received 15 results and 0 failures
+INFO flwr 2023-12-18 07:54:58,740 | server.py:153 | FL finished in 20872.47688351758
+INFO flwr 2023-12-18 07:54:58,849 | app.py:226 | app_fit: losses_distributed [(1, 0.6866348266601563), (2, 0.6834246595700582), (3, 0.6928916891415914), (4, 0.688100270430247), (5, 0.6978859345118205), (6, 0.6989378134409586), (7, 0.6842319210370381), (8, 0.678586733341217), (9, 0.6801946600278218), (10, 0.6766673763593037), (11, 0.6672033389409383), (12, 0.6629858056704203), (13, 0.6768715461095174), (14, 0.6675008098284404), (15, 0.6658005634943645), (16, 0.6668097496032714), (17, 0.6808723886807759), (18, 0.6713447252909343), (19, 0.6845380902290344), (20, 0.6782633860905966), (21, 0.6605956077575683), (22, 0.6603067914644877), (23, 0.6391737262407938), (24, 0.6797239502271016), (25, 0.7144583702087403), (26, 0.6671598354975382), (27, 0.6648272037506103), (28, 0.6354647397994995), (29, 0.6657846252123515), (30, 0.6793359835942586), (31, 0.6500508626302083), (32, 0.6235486745834351), (33, 0.674790628751119), (34, 0.6662062128384908), (35, 0.6603762865066528), (36, 0.6407333652178446), (37, 0.6926714301109314), (38, 0.7222381909688314), (39, 0.6636993487675985), (40, 0.6815903822580973), (41, 0.6902976512908936), (42, 0.6408502618471782), (43, 0.6482041398684184), (44, 0.6556645274162293), (45, 0.6885649840037028), (46, 0.6337255080540974), (47, 0.63186620871226), (48, 0.6573385198911031), (49, 0.593269697825114), (50, 0.6525974035263061), (51, 0.6524411559104919), (52, 0.6671772718429565), (53, 0.6747837503751118), (54, 0.6303367098172505), (55, 0.5935345768928528), (56, 0.6975079615910847), (57, 0.6666921655337016), (58, 0.6464682936668396), (59, 0.6402129809061686), (60, 0.6009470661481221), (61, 0.6052305062611898), (62, 0.6812629302342733), (63, 0.6677904446919759), (64, 0.6662067214647929), (65, 0.6235548297564188), (66, 0.5755931218465169), (67, 0.6735455095767975), (68, 0.6432923436164856), (69, 0.6186757763226827), (70, 0.6167290329933166), (71, 0.6126245419184367), (72, 0.5594616631666819), (73, 0.7305440445741017), (74, 0.6466779987017314), (75, 0.6153155903021494), (76, 0.7264492690563202), (77, 0.6719433883825938), (78, 0.6989081064860027), (79, 0.6114999254544576), (80, 0.6110393126805623), (81, 0.7355223536491394), (82, 0.6734336733818054), (83, 0.6158023873964945), (84, 0.5728220085302989), (85, 0.6734110116958618), (86, 0.6373545984427135), (87, 0.6364663342634836), (88, 0.6264211058616638), (89, 0.7066778163115184), (90, 0.573072749376297), (91, 0.675808064142863), (92, 0.538553907473882), (93, 0.6668174246946971), (94, 0.5951306780179342), (95, 0.5299238502979279), (96, 0.6418249825636546), (97, 0.5327030738194783), (98, 0.6376790563265483), (99, 0.5323361615339915), (100, 0.5968853573004405)]
+INFO flwr 2023-12-18 07:54:58,861 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2023-12-18 07:54:58,861 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2023-12-18 07:54:58,861 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2023-12-18 07:54:58,861 | app.py:230 | app_fit: metrics_centralized {}
+DEBUG flwr 2023-12-18 07:54:58,966 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:58,966 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:58,988 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:58,988 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,010 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,010 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,033 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,033 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,285 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,285 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,300 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,301 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,365 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,365 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,501 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,501 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,531 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,531 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,637 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,637 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:54:59,851 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,851 | app.py:304 | Disconnect and shut down
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+DEBUG flwr 2023-12-18 07:54:59,938 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:54:59,958 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:55:00,132 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:55:00,132 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:55:00,184 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:55:00,185 | app.py:304 | Disconnect and shut down
+DEBUG flwr 2023-12-18 07:55:00,237 | connection.py:141 | gRPC channel closed
+INFO flwr 2023-12-18 07:55:00,237 | app.py:304 | Disconnect and shut down
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Total time taken:  21048.685862779617
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each
+Training 1 epoch(s) w/ 8551 batches each

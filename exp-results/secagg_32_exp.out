@@ -1,0 +1,510 @@
+INFO flwr 2023-12-18 00:47:11,678 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=100, round_timeout=None)
+INFO flwr 2023-12-18 00:47:11,865 | app.py:176 | Flower ECE: gRPC server running (100 rounds), SSL is disabled
+INFO flwr 2023-12-18 00:47:11,866 | server.py:89 | Initializing global parameters
+INFO flwr 2023-12-18 00:47:11,866 | server.py:276 | Requesting initial parameters from one random client
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'fit_denses.1.weight', 'fit_denses.6.bias', 'fit_denses.1.bias', 'fit_denses.5.bias', 'fit_denses.3.weight', 'fit_denses.4.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.2.bias', 'cls.seq_relationship.weight', 'fit_denses.4.bias', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'fit_denses.0.weight', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.bias', 'fit_denses.6.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight', 'fit_denses.0.bias', 'fit_denses.6.weight', 'fit_denses.5.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.2.bias', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'fit_denses.3.weight', 'fit_denses.6.bias', 'fit_denses.1.weight', 'fit_denses.5.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.1.bias', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'fit_denses.3.weight', 'fit_denses.1.bias', 'fit_denses.2.bias', 'fit_denses.5.bias', 'cls.seq_relationship.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'fit_denses.2.weight', 'fit_denses.3.bias', 'fit_denses.1.weight', 'fit_denses.5.weight', 'fit_denses.6.bias', 'cls.predictions.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'fit_denses.5.weight', 'fit_denses.2.weight', 'fit_denses.4.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'fit_denses.3.weight', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.6.bias', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.1.bias', 'cls.seq_relationship.weight', 'fit_denses.2.bias', 'fit_denses.5.bias', 'fit_denses.6.weight', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.0.weight', 'fit_denses.5.weight', 'fit_denses.6.bias', 'fit_denses.1.weight', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.2.bias', 'cls.seq_relationship.weight', 'fit_denses.6.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.bias', 'fit_denses.5.bias', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.4.weight', 'fit_denses.3.weight', 'fit_denses.4.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'fit_denses.2.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.1.weight', 'fit_denses.5.weight', 'fit_denses.2.weight', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.5.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'fit_denses.6.weight', 'fit_denses.3.bias', 'fit_denses.3.weight', 'fit_denses.2.bias', 'cls.predictions.bias', 'fit_denses.4.weight', 'cls.seq_relationship.bias', 'fit_denses.0.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.bias', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.weight', 'fit_denses.0.bias', 'fit_denses.6.bias', 'fit_denses.3.weight', 'fit_denses.2.weight', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.1.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'fit_denses.4.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'fit_denses.3.bias', 'fit_denses.0.weight', 'fit_denses.4.bias', 'cls.predictions.decoder.weight', 'fit_denses.5.bias', 'fit_denses.5.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.0.bias', 'fit_denses.4.weight', 'fit_denses.6.bias', 'fit_denses.4.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.weight', 'fit_denses.3.weight', 'fit_denses.5.bias', 'fit_denses.3.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'fit_denses.0.weight', 'fit_denses.5.weight', 'fit_denses.1.weight', 'cls.seq_relationship.bias', 'fit_denses.6.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.1.bias', 'fit_denses.3.bias', 'fit_denses.6.weight', 'cls.seq_relationship.weight', 'fit_denses.2.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.weight', 'fit_denses.5.bias', 'fit_denses.0.bias', 'fit_denses.3.weight', 'fit_denses.4.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'fit_denses.0.weight', 'fit_denses.5.weight', 'fit_denses.1.weight', 'fit_denses.4.bias', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.weight', 'fit_denses.2.weight', 'fit_denses.6.bias', 'fit_denses.0.bias', 'fit_denses.3.weight', 'fit_denses.1.weight', 'fit_denses.5.bias', 'fit_denses.5.weight', 'fit_denses.3.bias', 'fit_denses.6.weight', 'fit_denses.2.bias', 'fit_denses.4.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'fit_denses.4.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'fit_denses.1.bias', 'cls.seq_relationship.bias', 'fit_denses.3.weight', 'fit_denses.4.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.1.weight', 'fit_denses.5.weight', 'fit_denses.5.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.2.bias', 'cls.predictions.bias', 'fit_denses.6.weight', 'fit_denses.2.weight', 'fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.0.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.bias', 'fit_denses.3.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.4.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'fit_denses.4.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.5.weight', 'cls.seq_relationship.weight', 'fit_denses.2.weight', 'fit_denses.0.weight', 'fit_denses.6.weight', 'fit_denses.2.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.0.bias', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.4.bias', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.bias', 'fit_denses.3.weight', 'fit_denses.2.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.5.weight', 'fit_denses.4.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'fit_denses.6.weight', 'cls.seq_relationship.bias', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.0.weight', 'fit_denses.6.bias', 'fit_denses.0.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'fit_denses.1.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.weight', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.2.bias', 'fit_denses.5.bias', 'cls.seq_relationship.weight', 'fit_denses.4.bias', 'fit_denses.4.weight', 'fit_denses.6.weight', 'fit_denses.3.bias', 'fit_denses.1.weight', 'fit_denses.5.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.0.bias', 'fit_denses.1.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'fit_denses.6.weight', 'fit_denses.0.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.6.bias', 'fit_denses.5.weight', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.5.bias', 'fit_denses.1.bias', 'fit_denses.3.bias', 'fit_denses.0.weight', 'fit_denses.3.weight', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'fit_denses.4.weight', 'fit_denses.2.weight', 'fit_denses.4.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.3.weight', 'fit_denses.6.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.bias', 'fit_denses.5.bias', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'fit_denses.0.weight', 'fit_denses.6.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'fit_denses.3.bias', 'fit_denses.2.bias', 'fit_denses.1.bias', 'fit_denses.2.weight', 'cls.seq_relationship.bias', 'fit_denses.4.bias', 'fit_denses.4.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.weight', 'fit_denses.3.bias', 'cls.seq_relationship.bias', 'fit_denses.0.weight', 'fit_denses.2.bias', 'cls.predictions.bias', 'fit_denses.6.weight', 'fit_denses.5.weight', 'fit_denses.6.bias', 'fit_denses.0.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'fit_denses.1.bias', 'fit_denses.2.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.1.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.0.bias', 'fit_denses.3.bias', 'cls.predictions.decoder.weight', 'fit_denses.4.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'fit_denses.6.bias', 'fit_denses.5.weight', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.1.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.4.weight', 'fit_denses.5.bias', 'cls.predictions.bias', 'fit_denses.1.bias', 'fit_denses.0.weight', 'fit_denses.3.weight', 'cls.seq_relationship.weight', 'fit_denses.6.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.2.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'fit_denses.3.weight', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'fit_denses.3.bias', 'fit_denses.0.weight', 'cls.seq_relationship.weight', 'fit_denses.2.weight', 'fit_denses.5.weight', 'fit_denses.6.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.bias', 'fit_denses.5.bias', 'fit_denses.4.weight', 'fit_denses.1.weight', 'fit_denses.2.bias', 'fit_denses.4.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.weight', 'fit_denses.0.weight', 'fit_denses.1.weight', 'fit_denses.4.bias', 'cls.seq_relationship.bias', 'fit_denses.5.bias', 'cls.predictions.bias', 'fit_denses.1.bias', 'fit_denses.4.weight', 'fit_denses.2.weight', 'fit_denses.3.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'fit_denses.6.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.0.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.bias', 'fit_denses.3.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.weight', 'fit_denses.5.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.4.bias', 'fit_denses.4.weight', 'fit_denses.3.weight', 'fit_denses.0.weight', 'fit_denses.5.weight', 'fit_denses.0.bias', 'fit_denses.3.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'fit_denses.1.bias', 'fit_denses.6.bias', 'cls.predictions.bias', 'fit_denses.1.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.2.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.5.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.1.weight', 'fit_denses.0.bias', 'cls.seq_relationship.bias', 'fit_denses.2.bias', 'fit_denses.6.weight', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.3.weight', 'fit_denses.1.bias', 'fit_denses.2.weight', 'cls.seq_relationship.weight', 'fit_denses.5.bias', 'fit_denses.0.weight', 'cls.predictions.decoder.weight', 'fit_denses.4.bias', 'fit_denses.4.weight', 'fit_denses.3.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.1.weight', 'fit_denses.6.weight', 'fit_denses.0.weight', 'fit_denses.4.bias', 'fit_denses.2.weight', 'fit_denses.6.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.5.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.weight', 'cls.seq_relationship.bias', 'fit_denses.3.weight', 'fit_denses.5.bias', 'fit_denses.2.bias', 'fit_denses.1.bias', 'fit_denses.0.bias', 'fit_denses.3.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.5.bias', 'cls.seq_relationship.bias', 'fit_denses.2.bias', 'fit_denses.1.weight', 'fit_denses.1.bias', 'fit_denses.5.weight', 'fit_denses.4.bias', 'fit_denses.0.bias', 'cls.seq_relationship.weight', 'fit_denses.3.weight', 'fit_denses.2.weight', 'fit_denses.6.bias', 'fit_denses.3.bias', 'cls.predictions.bias', 'fit_denses.0.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.weight', 'cls.predictions.decoder.weight', 'fit_denses.4.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.6.weight', 'fit_denses.2.weight', 'fit_denses.2.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.5.weight', 'fit_denses.3.weight', 'fit_denses.0.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.3.bias', 'cls.seq_relationship.weight', 'fit_denses.4.bias', 'fit_denses.0.weight', 'fit_denses.6.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'fit_denses.1.weight', 'fit_denses.4.weight', 'fit_denses.1.bias', 'fit_denses.5.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'fit_denses.3.bias', 'fit_denses.4.bias', 'fit_denses.5.bias', 'fit_denses.2.bias', 'fit_denses.2.weight', 'fit_denses.4.weight', 'fit_denses.3.weight', 'cls.predictions.decoder.weight', 'fit_denses.0.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.1.weight', 'fit_denses.5.weight', 'fit_denses.6.weight', 'fit_denses.6.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'fit_denses.1.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'fit_denses.2.bias', 'fit_denses.1.bias', 'fit_denses.1.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.weight', 'fit_denses.5.weight', 'cls.predictions.decoder.weight', 'fit_denses.2.weight', 'fit_denses.3.bias', 'fit_denses.3.weight', 'fit_denses.6.bias', 'fit_denses.0.weight', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.5.bias', 'fit_denses.4.weight', 'fit_denses.4.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.bias', 'fit_denses.4.bias', 'cls.seq_relationship.weight', 'fit_denses.0.bias', 'cls.predictions.bias', 'fit_denses.2.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.4.weight', 'fit_denses.2.bias', 'fit_denses.3.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.1.bias', 'fit_denses.5.bias', 'fit_denses.1.weight', 'cls.predictions.decoder.weight', 'fit_denses.0.weight', 'cls.seq_relationship.bias', 'fit_denses.6.weight', 'fit_denses.5.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.3.bias', 'fit_denses.5.weight', 'fit_denses.6.bias', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.2.weight', 'fit_denses.6.weight', 'fit_denses.1.weight', 'fit_denses.0.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'fit_denses.0.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'fit_denses.1.bias', 'fit_denses.3.weight', 'fit_denses.4.bias', 'fit_denses.4.weight', 'fit_denses.5.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.3.bias', 'fit_denses.4.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.4.bias', 'fit_denses.5.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'fit_denses.3.weight', 'fit_denses.2.bias', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.6.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.1.weight', 'fit_denses.0.bias', 'fit_denses.0.weight', 'fit_denses.5.weight', 'fit_denses.1.bias', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.2.weight', 'fit_denses.6.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'fit_denses.5.weight', 'fit_denses.5.bias', 'fit_denses.6.bias', 'fit_denses.1.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.0.bias', 'cls.seq_relationship.bias', 'fit_denses.2.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.6.weight', 'cls.predictions.decoder.weight', 'fit_denses.4.bias', 'fit_denses.2.weight', 'fit_denses.1.bias', 'cls.predictions.transform.dense.bias', 'fit_denses.3.bias', 'fit_denses.4.weight', 'fit_denses.3.weight', 'cls.predictions.transform.dense.weight', 'fit_denses.0.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at huawei-noah/TinyBERT_General_6L_768D were not used when initializing BertForSequenceClassification: ['fit_denses.1.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'fit_denses.3.bias', 'fit_denses.6.weight', 'fit_denses.2.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'fit_denses.0.weight', 'fit_denses.6.bias', 'fit_denses.2.bias', 'fit_denses.3.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'fit_denses.5.bias', 'fit_denses.1.bias', 'fit_denses.4.weight', 'fit_denses.5.weight', 'cls.predictions.transform.dense.bias', 'fit_denses.0.bias', 'fit_denses.4.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at huawei-noah/TinyBERT_General_6L_768D and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 285.13it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 424.57it/s]
+100%|██████████| 3/3 [00:00<00:00, 427.99it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 401.13it/s]
+100%|██████████| 3/3 [00:00<00:00, 454.45it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 422.42it/s]
+INFO flwr 2023-12-18 00:48:37,081 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,083 | connection.py:42 | ChannelConnectivity.IDLE
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+DEBUG flwr 2023-12-18 00:48:37,084 | connection.py:42 | ChannelConnectivity.CONNECTING
+INFO flwr 2023-12-18 00:48:37,084 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,085 | connection.py:42 | ChannelConnectivity.IDLE
+INFO flwr 2023-12-18 00:48:37,085 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,086 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,087 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,088 | connection.py:42 | ChannelConnectivity.READY
+DEBUG flwr 2023-12-18 00:48:37,088 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,089 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+DEBUG flwr 2023-12-18 00:48:37,092 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 401.79it/s]
+INFO flwr 2023-12-18 00:48:37,124 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,125 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,126 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,130 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+INFO flwr 2023-12-18 00:48:37,135 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,136 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,137 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,140 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 402.61it/s]
+INFO flwr 2023-12-18 00:48:37,181 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,183 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,183 | connection.py:42 | ChannelConnectivity.CONNECTING
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+DEBUG flwr 2023-12-18 00:48:37,187 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 398.00it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+INFO flwr 2023-12-18 00:48:37,245 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,247 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,248 | connection.py:42 | ChannelConnectivity.CONNECTING
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+DEBUG flwr 2023-12-18 00:48:37,252 | connection.py:42 | ChannelConnectivity.READY
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 443.90it/s]
+INFO flwr 2023-12-18 00:48:37,284 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+DEBUG flwr 2023-12-18 00:48:37,285 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,286 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,289 | connection.py:42 | ChannelConnectivity.READY
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+Reusing dataset glue (/scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 628.30it/s]
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-93aff4f4dcaeb739.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-d2ef9dcd59b2bf3f.arrow
+Loading cached processed dataset at /scratch/ml9027/.cache/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad/cache-23629d86c01ce6fb.arrow
+INFO flwr 2023-12-18 00:48:37,346 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,347 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,348 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,351 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 00:48:37,386 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,388 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,388 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,392 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 00:48:37,444 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-18 00:48:37,446 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:37,447 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-18 00:48:37,450 | connection.py:42 | ChannelConnectivity.READY
+INFO flwr 2023-12-18 00:48:38,598 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2023-12-18 00:48:38,598 | server.py:91 | Evaluating initial parameters
+INFO flwr 2023-12-18 00:48:38,598 | server.py:104 | FL starting
+DEBUG flwr 2023-12-18 00:48:38,598 | server.py:222 | fit_round 1: strategy sampled 11 clients (out of 11)
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,429 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,430 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,430 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-18 00:48:41,430 | connection.py:141 | gRPC channel closed
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    task_ins = receive()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+/bin/bash: line 3: 998400 Killed                  python3 flwr_server.py
+/bin/bash: line 3: 998402 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998403 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998404 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998407 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998408 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998409 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998410 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998411 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998412 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998417 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998418 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998420 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998422 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998423 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998424 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998425 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998426 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998429 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998430 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998431 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998432 Killed                  python3 flwr_client.py
+/bin/bash: line 3: 998433 Killed                  python3 flwr_client.py
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Socket closed", grpc_status:14, created_time:"2023-12-18T00:48:41.413919413-05:00"}"
+>
+DEBUG flwr 2023-12-18 00:48:41,633 | connection.py:141 | gRPC channel closed
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+Traceback (most recent call last):
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+Traceback (most recent call last):
+DEBUG flwr 2023-12-18 00:48:41,634 | connection.py:141 | gRPC channel closed
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+Traceback (most recent call last):
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+Traceback (most recent call last):
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 73, in <module>
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+    main()
+    main()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    main()
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    main()
+    start_client(
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    main()
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    main()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+  File "/scratch/ml9027/ming/lamp-main/flwr_client.py", line 69, in main
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    start_client(
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    task_ins = receive()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 401, in start_numpy_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    task_ins = receive()
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+    task_ins = receive()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    server_message = next(server_message_iterator)
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    start_client(
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/app.py", line 275, in start_client
+    task_ins = receive()
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    task_ins = receive()
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    task_ins = receive()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+    task_ins = receive()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    task_ins = receive()
+    return self._next()
+    task_ins = receive()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 118, in receive
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    server_message = next(server_message_iterator)
+    return self._next()
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    server_message = next(server_message_iterator)
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 540, in __next__
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    return self._next()
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    raise self
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    return self._next()
+  File "/scratch/ml9027/lamp-main/penv/lib/python3.9/site-packages/grpc/_channel.py", line 966, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "recvmsg:Connection reset by peer"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:0.0.0.0:8080 {created_time:"2023-12-18T00:48:41.413914817-05:00", grpc_status:14, grpc_message:"recvmsg:Connection reset by peer"}"
+>
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "recvmsg:Connection reset by peer"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:0.0.0.0:8080 {created_time:"2023-12-18T00:48:41.413902913-05:00", grpc_status:14, grpc_message:"recvmsg:Connection reset by peer"}"
+>
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2023-12-18T00:48:41.413887701-05:00", grpc_status:14, grpc_message:"Socket closed"}"
+>
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "recvmsg:Connection reset by peer"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:0.0.0.0:8080 {created_time:"2023-12-18T00:48:41.415110905-05:00", grpc_status:14, grpc_message:"recvmsg:Connection reset by peer"}"
+>
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Socket closed", grpc_status:14, created_time:"2023-12-18T00:48:41.413900968-05:00"}"
+>    raise self
+
+    raise self
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "recvmsg:Connection reset by peer"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:0.0.0.0:8080 {grpc_message:"recvmsg:Connection reset by peer", grpc_status:14, created_time:"2023-12-18T00:48:41.413910935-05:00"}"
+>grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2023-12-18T00:48:41.414090956-05:00", grpc_status:14, grpc_message:"Socket closed"}"
+>
+
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Socket closed", grpc_status:14, created_time:"2023-12-18T00:48:41.413919061-05:00"}"
+>
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2023-12-18T00:48:41.413896199-05:00", grpc_status:14, grpc_message:"Socket closed"}"
+>
+slurmstepd: error: Detected 23 oom-kill event(s) in StepId=40939362.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
