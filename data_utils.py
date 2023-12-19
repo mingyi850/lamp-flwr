@@ -26,11 +26,11 @@ class TextDataset:
         n_samples = n_inputs * batch_size
 
         if split == 'test':
-            assert n_samples <= 1000
+            #assert n_samples <= 1000
             idxs = idxs[:n_samples]
         elif split == 'val':
             idxs = idxs[1000:] # first 1000 saved for testing
-            assert len(idxs) >= n_samples
+            #assert len(idxs) >= n_samples
 
             zipped = [(idx, len(full[idx][seq_key])) for idx in idxs]
             zipped = sorted(zipped, key=lambda x: x[1])

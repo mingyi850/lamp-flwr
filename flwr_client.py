@@ -1,6 +1,7 @@
 from collections import OrderedDict
 from typing import Dict, List, Tuple
 
+import os
 import numpy as np
 import torch
 from data_utils import TextDataset
@@ -12,7 +13,6 @@ from transformers import AutoModelForSequenceClassification
 from transformers import AutoTokenizer
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, DataCollatorWithPadding
 from datasets import load_metric
-from memory_profiler import profile
 
 DEVICE: str = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -55,8 +55,6 @@ class SecAggClient(fl.client.NumPyClient):
         loss, accuracy = secagg.test(self.model, self.testloader, device=DEVICE)
         return float(loss), self.num_examples["testset"], {"accuracy": float(accuracy)}
 
-    
-@profile
 def main() -> None:
     """Load data, start SecAggClient."""
     devicestr = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -66,8 +64,11 @@ def main() -> None:
     model.to(DEVICE)
     trainloader, testloader, num_examples = secagg.get_tokenized_datasets(1)
     # Start client
+    master_addr = os.getenv('MASTER_ADDR', '0.0.0.0')
+    master_port = os.getenv('MASTER_PORT', '8080')
+    print("Connecting to server at:", f"{master_addr}:{master_port}")
     client = SecAggClient(model, trainloader, testloader, num_examples)
-    fl.client.start_numpy_client(server_address="0.0.0.0:8080", client=client)
+    fl.client.start_numpy_client(server_address=f"{master_addr}:{master_port}", client=client)
 
 
 if __name__ == "__main__":
