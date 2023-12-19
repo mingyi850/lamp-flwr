@@ -4,10 +4,10 @@ from typing import Dict, List, Tuple
 import os
 import numpy as np
 import torch
-from data_utils import TextDataset
 
 import secagg
 import flwr as fl
+import torch.nn as nn
 
 from transformers import AutoModelForSequenceClassification
 from transformers import AutoTokenizer
@@ -19,7 +19,7 @@ DEVICE: str = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class SecAggClient(fl.client.NumPyClient):
     def __init__(
         self,
-        model: secagg.Net,
+        model: nn.Module,
         trainloader: torch.utils.data.DataLoader,
         testloader: torch.utils.data.DataLoader,
         num_examples: Dict,
