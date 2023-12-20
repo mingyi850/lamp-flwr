@@ -1,5 +1,4 @@
 import argparse
-import torch
 
 def get_args():
     parser = argparse.ArgumentParser(description='LAMP attack')
@@ -15,6 +14,9 @@ def get_args():
     parser.add_argument('--loss', choices=['cos', 'dlg', 'tag'], required=True)
     parser.add_argument('-b','--batch_size', type=int, default=1)
     parser.add_argument('--n_inputs', type=int, required=True) # val:10/20, test:100
+    parser.add_argument('--steps', type=int, default=100)
+    parser.add_argument('--noise', type=float, default=0.0)
+    parser.add_argument('--staleness', type=int, default=0)
 
     parser.add_argument('--defense_noise', type=float, default=None) # add noise to true grads
     parser.add_argument('--defense_pct_mask', type=float, default=None) # mask some percentage of gradients
@@ -23,7 +25,6 @@ def get_args():
     parser.add_argument('--bert_path', type=str, default='bert-base-uncased')
 
     # Frozen params
-
     parser.add_argument('--device', type=str, default='cuda')
     parser.add_argument('--opt_alg', choices=['adam', 'bfgs', 'bert-adam'], default='adam')
     parser.add_argument('--n_steps', type=int, default=2000) #
@@ -52,9 +53,6 @@ def get_args():
 
     # Debug params
     parser.add_argument('--print_every', type=int, default=50)
-
-    #Additional params
-    parser.add_argument('--sec_agg', choices=['avg', 'max', 'sum', 'none'], default='avg')
 
     args = parser.parse_args()
 

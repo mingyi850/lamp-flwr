@@ -1,0 +1,221 @@
+Running input #0 of 100.
+reference:
+========================
+for anyone who remembers the '60s or is interested in one man's response to stroke , ram dass : fierce grace is worth seeking out .
+========================
+Debug: ids_shape = 32, pads = [32]
+Debug: input ids = tensor([[  101,  2005,  3087,  2040, 17749,  1996,  1005, 20341,  2030,  2003,
+          4699,  1999,  2028,  2158,  1005,  1055,  3433,  2000,  6909,  1010,
+          8223,  8695,  2015,  1024,  9205,  4519,  2003,  4276,  6224,  2041,
+          1012,   102]], device='cuda:0')
+Debug: ref = ["[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]"]
+[Init] best rec loss: 1.0537580251693726 for ['[CLS] volunteer son opinion observed nightfallros signature guns defensive del horizontal flight bathroom reflect / vera possible hurry mee
+ting exterior enforcement jacket designed southampton % cash discover guest applications circuit [SEP]']
+[Init] best rec loss: 1.042309284210205 for ['[CLS] / distribution career dam pagesmen given ruben 501 colorado and original cas fresh progress chew art please marieless sept facade club
+ outstanding overs subscription absent demonford eternity [SEP]']
+[Init] best rec loss: 1.0402145385742188 for ['[CLS] orleans go corporation fair adventfochurch glimpse version way approvednea in far state fraction shaft mall modernoku those soonerian
+ bon suitsts def completeminze [SEP]']
+[Init] best rec loss: 1.0381125211715698 for ['[CLS] heel digital pages assembled harley sample applied solution seoul acceptable argument eu prime pure reasonably ap backseat just himse
+lf been rang crash along bends policy never think vacancy descendants mouse [SEP]']
+[Init] best rec loss: 1.0188181400299072 for ['[CLS] boss jo kennedy fashionedied cathedral service excel prize longest dome vocalist pose subject driving assessment support coordinates
+coating affiliate gang green des mystery breeders atkinsarkptive kerman da [SEP]']
+[Init] best rec loss: 1.0176383256912231 for ['[CLS] order injection honorable di cement count omahaala historic someone brake de 2006 parallel table edward keeps grant goddamn round pos
+e coincidence hand westminsterudy liz caps ; billboard parents [SEP]']
+[Init] best rec loss: 1.006738543510437 for ['[CLS] rider jace desknik passions learning immediately chat exhibition city bride independence anita istanbul motion charge regular behind h
+ey famously chains labour coffee kellan favorite nedra bench ears quarter loaded [SEP]']
+[Init] best perm rec loss: 1.005983591079712 for ['[CLS] jacenik chains labour loaded anita exhibition immediately learning motion kellan regular famously favorite chat charge bench hey
+ears quarter istanbul independence behind nedra rider bride desk coffee passions city [SEP]']
+[Init] best perm rec loss: 1.0051277875900269 for ['[CLS] ears exhibition passions jace regular rider independence loaded city motion famously favorite desk coffee nedra immediately chat
+ quarter bride kellan chargenik anita chains learning istanbul bench hey behind labour [SEP]']
+[Init] best perm rec loss: 1.0033482313156128 for ['[CLS] charge exhibition desk jace favorite famouslynik bench hey kellan loaded istanbul motion independence quarter chains anita labou
+r coffee rider ears regular immediately nedra behind city bride chat learning passions [SEP]']
+[Init] best perm rec loss: 1.0027590990066528 for ['[CLS] independence istanbul motion rider favorite immediately earsnik regular learning labour charge bench city coffee desk kellan ned
+ra loaded hey jace quarter famously chat anita exhibition bride passions chains behind [SEP]']
+[Init] best perm rec loss: 1.0018573999404907 for ['[CLS] chat favorite learning istanbul chains passionsnik anita jace ears hey regular labour behind immediately city quarter loaded mot
+ion bride desk charge bench coffee independence kellan rider nedra exhibition famously [SEP]']
+[Init] best perm rec loss: 1.0017834901809692 for ['[CLS] ears bench independence chains favorite desk hey bride city kellan coffee rider istanbul famously behind learning loaded motion
+regular nedra passions jace chat exhibition anita labour immediately quarter chargenik [SEP]']
+[Init] best perm rec loss: 1.0016791820526123 for ['[CLS] anita loaded desk jace city bench behind motionnik labour chains passions bride chat immediately famously hey quarter kellan ned
+ra istanbul coffee regular exhibition independence ears learning favorite charge rider [SEP]']
+[Init] best perm rec loss: 1.0002485513687134 for ['[CLS] loaded ears desk immediately charge chat bride favorite city hey famously jace regular motion learningnik passions chains quarte
+r rider istanbul behind kellan coffee labour nedra exhibition independence bench anita [SEP]']
+[Init] best perm rec loss: 0.9991837739944458 for ['[CLS] bride city desk quarter favorite immediately jace coffeenik regular hey learning chat famously rider behind chains ears exhibiti
+on labour motion nedra passions istanbul independence kellan bench anita charge loaded [SEP]']
+Nsteps: 2000
+[  50/2000] tot_loss=3.400 (perp=13.585, rec=0.683), tot_loss_proj:3.712 [t=0.28s]
+prediction: ['[CLS] freshbedo early handler could amount jon enjoying reached "igate greek band sounds characters podcast & additionallan urging sesameci noodles instantly morepoo heaven
+ly wire disc cheese [SEP]']
+[ 100/2000] tot_loss=3.422 (perp=13.945, rec=0.633), tot_loss_proj:3.786 [t=0.26s]
+prediction: ['[CLS] young embarrassed severe humans where gain allah enjoying reached all artemis greek band nfl kiss podcast by raisedlan > fort idea pietro favourite hips thermal logic
+ force into cheese [SEP]']
+[ 150/2000] tot_loss=3.099 (perp=12.725, rec=0.554), tot_loss_proj:3.572 [t=0.26s]
+prediction: ['[CLS] young reissue almost someone could mylesuit cells long was gogh 1960s thinking instant goddess podcast about. x approachedffer appetite zack polka caliph gives guidan
+ce force that bliss [SEP]']
+[ 200/2000] tot_loss=2.972 (perp=12.231, rec=0.526), tot_loss_proj:3.464 [t=0.26s]
+prediction: ['[CLS] freedom tan southern someone nowhere mylesuit into. " painted 1960s : sweet diameter gubernatorial say ; - approaching reggie mini nice 1960s caliph is bu force thatu
+rities [SEP]']
+Attempt swap
+Swapped tokens
+[ 250/2000] tot_loss=2.831 (perp=11.783, rec=0.474), tot_loss_proj:3.361 [t=0.28s]
+prediction: ['[CLS] freedom fees critical someone subsequently mylesuit into. was shear depicting : sweet diameter beaver say ; furiously when for mini nice 1960s ; is gabe force ( absor
+bed [SEP]']
+[ 300/2000] tot_loss=3.012 (perp=12.787, rec=0.455), tot_loss_proj:3.564 [t=0.26s]
+Attempt swap
+Moved token
+[ 350/2000] tot_loss=2.696 (perp=11.220, rec=0.452), tot_loss_proj:3.241 [t=0.28s]
+prediction: ['[CLS] fierce factors critical someone else fierceians into erin is merely 1960s : brain maybe beaver say ; besides for gracemat quarter 1960s : grace stroke out ( absorbed
+[SEP]']
+Attempt swap
+Swapped tokens
+[ 400/2000] tot_loss=3.064 (perp=12.829, rec=0.498), tot_loss_proj:3.625 [t=0.26s]
+[ 450/2000] tot_loss=3.291 (perp=12.354, rec=0.820), tot_loss_proj:3.447 [t=0.26s]
+Attempt swap
+Put prefix at the end
+[ 500/2000] tot_loss=2.926 (perp=11.704, rec=0.585), tot_loss_proj:3.339 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 550/2000] tot_loss=2.770 (perp=11.236, rec=0.523), tot_loss_proj:3.244 [t=0.26s]
+[ 600/2000] tot_loss=2.642 (perp=10.792, rec=0.484), tot_loss_proj:3.133 [t=0.26s]
+prediction: ['[CLS] professional alley anyone. notable grace gave round deux, grace miss out worth out supreme methods scheduled certainly 2002waterians for nearest is acting consensus q
+Attempt swap
+Swapped tokens
+[ 650/2000] tot_loss=2.599 (perp=10.679, rec=0.464), tot_loss_proj:3.130 [t=0.27s]
+Attempt swap
+Swapped tokens
+[ 700/2000] tot_loss=2.723 (perp=11.373, rec=0.448), tot_loss_proj:3.390 [t=0.31s]
+prediction: ['[CLS] professional alley anyone. round grace gives notable 1954 : grace nap out worth out supreme, scheduled certainly 2002poolzyn overering is acting s friend for methods
+[SEP]']
+[ 750/2000] tot_loss=2.664 (perp=11.119, rec=0.441), tot_loss_proj:3.246 [t=0.25s]
+prediction: ['[CLS] professional alley anyone. round grace gives notableester : grace nap out worth out woman, scheduled probably 2002pool thus overering is acting s friend for methods [
+SEP]']
+Attempt swap
+Swapped tokens
+[ 800/2000] tot_loss=2.780 (perp=11.762, rec=0.427), tot_loss_proj:3.365 [t=0.26s]
+prediction: ['[CLS] facebook alley anyone. round grace magnitude notable out : grace napester worth out woman from critical probably 2002pool thus overering is acting 60s friend for meth
+ods [SEP]']
+Attempt swap
+Swapped tokens
+[ 850/2000] tot_loss=2.703 (perp=11.391, rec=0.424), tot_loss_proj:3.273 [t=0.27s]
+prediction: ['[CLS] facebook accidental anyone. round grace magnitude include out : grace nap kinetic worth out woman from critical probably subsequently for thus overering is worth 60s
+friendpool methods [SEP]']
+[ 900/2000] tot_loss=2.742 (perp=11.654, rec=0.412), tot_loss_proj:3.329 [t=0.26s]
+prediction: ['[CLS] facebook accidental anyone. round gracestrel include out. grace napester worth out fierce from critical lasted subsequently for thus anyoneering is worth 60s fellowpo
+ol ) [SEP]']
+Page up
+Attempt swap
+Swapped tokens
+[ 950/2000] tot_loss=2.782 (perp=11.871, rec=0.408), tot_loss_proj:3.384 [t=0.25s]
+prediction: ['[CLS] facebook accidental anyone. round gracestrel include out. grace nap kinetic worth out fierce from 60s lasted subsequentlyeded thus anyoneering is worth critical fello
+wpool ) [SEP]']
+Attempt swap
+Swapped tokens
+[1000/2000] tot_loss=2.816 (perp=12.038, rec=0.408), tot_loss_proj:3.430 [t=0.26s]
+prediction: ['[CLS] facebook storage anyone. round gracestrel include out. grace from kinetic worth out fierce stiff 60s lasted subsequentlyeded thus anyone stroke is worth critical fell
+owpool ) [SEP]']
+[1050/2000] tot_loss=2.804 (perp=12.038, rec=0.396), tot_loss_proj:3.433 [t=0.26s]
+prediction: ['[CLS] facebook storage anyone. round gracestrel include out. grace from kinetic worth out fierce stiff 60s lasted subsequentlyeded thus anyone stroke is worth critical fell
+owpool ) [SEP]']
+Attempt swap
+Moved token
+[1100/2000] tot_loss=2.630 (perp=11.169, rec=0.396), tot_loss_proj:3.259 [t=0.29s]
+prediction: ['[CLS] storage anyone professional. round gracestrel include out. grace from kinetic worth out fierce stiff 60s someone subsequentlyeded thus anyone stroke is worth critical
+ fellowpool : [SEP]']
+Attempt swap
+Moved token
+[1150/2000] tot_loss=2.589 (perp=10.993, rec=0.391), tot_loss_proj:3.241 [t=0.26s]
+prediction: ['[CLS] storage anyone professional. round gracestrel include out. grace from kinetic worth out fierce subject 60s someone subsequentlyeded thus stroke anyone is worth critic
+al fellowpool : [SEP]']
+[1200/2000] tot_loss=2.588 (perp=10.993, rec=0.389), tot_loss_proj:3.241 [t=0.26s]
+prediction: ['[CLS] storage anyone professional. round gracestrel include out. grace from kinetic worth out fierce subject 60s someone subsequentlyeded thus stroke anyone is worth critic
+al fellowpool : [SEP]']
+Attempt swap
+Moved sequence
+[1250/2000] tot_loss=2.519 (perp=10.667, rec=0.386), tot_loss_proj:3.170 [t=0.27s]
+prediction: ['[CLS] storage round anyone interested. gracestrel include out. grace from kinetic worth out fierce subject 60s someone subsequentlyeded thus stroke anyone is worth critical
+ fellowpool : [SEP]']
+Attempt swap
+Swapped tokens
+[1300/2000] tot_loss=2.451 (perp=10.303, rec=0.391), tot_loss_proj:3.099 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracestrel include out. grace from kinetic worth out fierce worth 60s someone subsequently for stroke stroke anyone is worth critical
+ fellowpool : [SEP]']
+[1350/2000] tot_loss=2.435 (perp=10.258, rec=0.384), tot_loss_proj:3.085 [t=0.27s]
+prediction: ['[CLS] storage round anyone interested. gracestrel include out. grace from kinetic worth out fierce worth 60s intentions subsequently for stroke stroke anyone is worth criti
+cal fellowpool : [SEP]']
+Attempt swap
+[1400/2000] tot_loss=2.503 (perp=10.612, rec=0.380), tot_loss_proj:3.151 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracestrel include out. grace from soluble worth out fierce thus 60s intentions subsequently for stroke stroke anyone is worth critic
+al fellowpool : [SEP]']
+Attempt swap
+Swapped tokens
+[1450/2000] tot_loss=2.544 (perp=10.806, rec=0.382), tot_loss_proj:3.256 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracerogate include out. grace from anyone worth out fierce thus 60s intentions subsequently for stroke stroke kinetic is worth criti
+cal fellowinator : [SEP]']
+[1500/2000] tot_loss=2.544 (perp=10.806, rec=0.383), tot_loss_proj:3.255 [t=0.27s]
+prediction: ['[CLS] storage round anyone interested. gracerogate include out. grace from anyone worth out fierce thus 60s intentions subsequently for stroke stroke kinetic is worth criti
+cal fellowinator : [SEP]']
+Attempt swap
+Moved token
+Page up
+[1550/2000] tot_loss=2.573 (perp=10.991, rec=0.375), tot_loss_proj:3.293 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracerogate include out. grace from anyone worth out fierce worth 60s intentions subsequently stroke for stroke kinetic is worth crit
+ical fellowinator : [SEP]']
+Attempt swap
+Moved token
+[1600/2000] tot_loss=2.566 (perp=10.960, rec=0.374), tot_loss_proj:3.297 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracerogate include out. grace from anyone worth out fierce worth 60s intentions subsequently for stroke stroke kinetic is worth crit
+ical fellowinator : [SEP]']
+[1650/2000] tot_loss=2.540 (perp=10.851, rec=0.369), tot_loss_proj:3.231 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracerogate include out. grace from anyone worth out fierce worth 60s intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+Attempt swap
+Swapped tokens
+[1700/2000] tot_loss=2.512 (perp=10.702, rec=0.371), tot_loss_proj:3.197 [t=0.26s]
+prediction: ['[CLS] storage round anyone interested. gracerogate include out. grace from anyone worth out 60s worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+Attempt swap
+Swapped tokens
+[1750/2000] tot_loss=2.493 (perp=10.582, rec=0.377), tot_loss_proj:3.172 [t=0.26s]
+prediction: ['[CLS] storage round 60s interested. gracerogate include out. grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+[1800/2000] tot_loss=2.504 (perp=10.675, rec=0.369), tot_loss_proj:3.201 [t=0.26s]
+prediction: ['[CLS] storage round 60s interested. gracerogate include who. grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+Attempt swap
+Swapped tokens
+[1850/2000] tot_loss=2.473 (perp=10.511, rec=0.371), tot_loss_proj:3.164 [t=0.27s]
+prediction: ['[CLS] storage. 60s interested. gracerogate include who round grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+Attempt swap
+[1900/2000] tot_loss=2.468 (perp=10.511, rec=0.366), tot_loss_proj:3.160 [t=0.27s]
+prediction: ['[CLS] storage. 60s interested. gracerogate include who round grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+[1950/2000] tot_loss=2.471 (perp=10.511, rec=0.368), tot_loss_proj:3.164 [t=0.26s]
+prediction: ['[CLS] storage. 60s interested. gracerogate include who round grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+Attempt swap
+[2000/2000] tot_loss=2.468 (perp=10.511, rec=0.366), tot_loss_proj:3.160 [t=0.26s]
+prediction: ['[CLS] storage. 60s interested. gracerogate include who round grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth crit
+ical fellowinator : [SEP]']
+Done with input #0 of 100.
+
+reference:
+========================
+[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]
+========================
+predicted:
+========================
+[CLS] storage. 60s interested. gracerogate include who round grace from anyone worth out anyone worth fierce intentions subsequently for stroke stroke soluble is worth critical fellowina
+tor : [SEP]
+========================
+[Curr input metrics]:
+rouge1     | fm: 49.057 | p: 48.148 | r: 50.000
+rouge2     | fm: 3.922 | p: 3.846 | r: 4.000
+rougeL     | fm: 26.415 | p: 25.926 | r: 26.923
+rougeLsum  | fm: 26.415 | p: 25.926 | r: 26.923
+r1fm+r2fm = 52.978
+[Aggregate metrics]:
+rouge1     | fm: 49.057 | p: 48.148 | r: 50.000
+rouge2     | fm: 3.922 | p: 3.846 | r: 4.000
+rougeL     | fm: 26.415 | p: 25.926 | r: 26.923
+rougeLsum  | fm: 26.415 | p: 25.926 | r: 26.923
+r1fm+r2fm = 52.978

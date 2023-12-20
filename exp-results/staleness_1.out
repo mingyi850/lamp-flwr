@@ -1,0 +1,204 @@
+Running input #0 of 100.
+reference:
+========================
+for anyone who remembers the '60s or is interested in one man's response to stroke , ram dass : fierce grace is worth seeking out .
+========================
+Debug: ids_shape = 32, pads = [32]
+Debug: input ids = tensor([[  101,  2005,  3087,  2040, 17749,  1996,  1005, 20341,  2030,  2003,
+          4699,  1999,  2028,  2158,  1005,  1055,  3433,  2000,  6909,  1010,
+          8223,  8695,  2015,  1024,  9205,  4519,  2003,  4276,  6224,  2041,
+          1012,   102]], device='cuda:0')
+Debug: ref = ["[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]"]
+[Init] best rec loss: 1.055131435394287 for ['[CLS] volunteer son opinion observed nightfallros signature guns defensive del horizontal flight bathroom reflect / vera possible hurry meet
+ing exterior enforcement jacket designed southampton % cash discover guest applications circuit [SEP]']
+[Init] best rec loss: 1.0418747663497925 for ['[CLS] / distribution career dam pagesmen given ruben 501 colorado and original cas fresh progress chew art please marieless sept facade clu
+b outstanding overs subscription absent demonford eternity [SEP]']
+[Init] best rec loss: 1.041420340538025 for ['[CLS] orleans go corporation fair adventfochurch glimpse version way approvednea in far state fraction shaft mall modernoku those soonerian
+bon suitsts def completeminze [SEP]']
+[Init] best rec loss: 1.0411843061447144 for ['[CLS] vary filmed collectution receiver winds thereation hu home essayllary town planetsding respectively lighter issued plant mrs texts ma
+intenance quentin financial stacks pipeline supreme legal dodged table [SEP]']
+[Init] best rec loss: 1.0378669500350952 for ['[CLS] heel digital pages assembled harley sample applied solution seoul acceptable argument eu prime pure reasonably ap backseat just himse
+lf been rang crash along bends policy never think vacancy descendants mouse [SEP]']
+[Init] best rec loss: 1.0167144536972046 for ['[CLS] boss jo kennedy fashionedied cathedral service excel prize longest dome vocalist pose subject driving assessment support coordinates
+coating affiliate gang green des mystery breeders atkinsarkptive kerman da [SEP]']
+[Init] best rec loss: 1.0071277618408203 for ['[CLS] rider jace desknik passions learning immediately chat exhibition city bride independence anita istanbul motion charge regular behind
+hey famously chains labour coffee kellan favorite nedra bench ears quarter loaded [SEP]']
+[Init] best perm rec loss: 1.0054912567138672 for ['[CLS] jacenik chains labour loaded anita exhibition immediately learning motion kellan regular famously favorite chat charge bench hey
+ ears quarter istanbul independence behind nedra rider bride desk coffee passions city [SEP]']
+[Init] best perm rec loss: 1.0043827295303345 for ['[CLS] ears exhibition passions jace regular rider independence loaded city motion famously favorite desk coffee nedra immediately chat
+ quarter bride kellan chargenik anita chains learning istanbul bench hey behind labour [SEP]']
+[Init] best perm rec loss: 1.0038806200027466 for ['[CLS] jacenik bride immediately learning anita quarter passions istanbul famously regular city bench desk rider hey kellan labour moti
+on ears behind coffee loaded favorite chat exhibition chains independence nedra charge [SEP]']
+[Init] best perm rec loss: 1.0030763149261475 for ['[CLS] chains ears hey jace charge motion anita exhibition rider learning behind bride desk famously quarternik regular labour chat loa
+ded favorite immediately istanbul nedra passions kellan bench independence coffee city [SEP]']
+[Init] best perm rec loss: 1.0025662183761597 for ['[CLS] hey passions behind labournik learning bench favorite city chains exhibition rider immediately independence regular loaded kella
+n istanbul coffee quarter motion anita jace bride chat ears nedra charge famously desk [SEP]']
+[Init] best perm rec loss: 1.0018638372421265 for ['[CLS] kellan regular bench loaded quarter rider exhibition immediately chat desk independence anita nedra behind jace learning labour
+motion chains ears favorite charge famously passionsnik city bride coffee istanbul hey [SEP]']
+[Init] best perm rec loss: 1.0008634328842163 for ['[CLS] independencenik favorite nedra desk city jace learning exhibition istanbul motion rider coffee chains famously charge labour reg
+ular passions behind anita bride hey quarter kellan chat immediately loaded ears bench [SEP]']
+Nsteps: 2000
+[  50/2000] tot_loss=3.179 (perp=11.902, rec=0.798), tot_loss_proj:3.441 [t=0.26s]
+[ 100/2000] tot_loss=3.114 (perp=12.803, rec=0.553), tot_loss_proj:3.548 [t=0.26s]
+[ 150/2000] tot_loss=3.034 (perp=12.535, rec=0.527), tot_loss_proj:3.514 [t=0.29s]
+[ 200/2000] tot_loss=2.765 (perp=11.382, rec=0.489), tot_loss_proj:3.271 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 250/2000] tot_loss=3.044 (perp=12.415, rec=0.561), tot_loss_proj:3.511 [t=0.26s]
+prediction: ["[CLS] for jones absent ready alexander raid golden records = 1 fantastic'rocket sweet humanity fancy smashwords preserve dexter several macbeth - lincoln heavy dhakaverse o
+ffer passportorough over [SEP]"]
+[ 300/2000] tot_loss=2.748 (perp=11.326, rec=0.483), tot_loss_proj:3.274 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 350/2000] tot_loss=2.640 (perp=10.989, rec=0.443), tot_loss_proj:3.271 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 400/2000] tot_loss=2.632 (perp=10.197, rec=0.592), tot_loss_proj:2.995 [t=0.26s]
+prediction: ["[CLS] for anyone about with combined raid : records - finest :'nails offer allah named augustus say steve gave hip! was divine amnesty upright worse worth seeking missing [
+SEP]"]
+[ 450/2000] tot_loss=2.749 (perp=11.243, rec=0.501), tot_loss_proj:3.203 [t=0.26s]
+prediction: ["[CLS] for anyone expected with pro delight hey records - finest :'moniker offer allah named augustus say bob lamp hip! was fierce amnesty upright worse worth seeking missin
+g [SEP]"]
+Attempt swap
+Swapped tokens
+[ 500/2000] tot_loss=2.534 (perp=10.375, rec=0.459), tot_loss_proj:3.123 [t=0.26s]
+prediction: ["[CLS] for anyone reported with pro delight index ) - finest : 'pes offer equal appointed amnesty say bob lamp hip! was fierce augustus upright offer worth seeking over [SEP
+]"]
+Attempt swap
+Moved token
+[ 550/2000] tot_loss=2.423 (perp=9.894, rec=0.445), tot_loss_proj:3.027 [t=0.26s]
+[ 600/2000] tot_loss=2.503 (perp=10.395, rec=0.424), tot_loss_proj:3.169 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 650/2000] tot_loss=2.390 (perp=9.865, rec=0.417), tot_loss_proj:3.094 [t=0.26s]
+prediction: ["[CLS] for someone from :acious found pete type : finest :'thus availability interested amnesty shooter include bob and stroke : or grace augustus stroke offer worth seeking
+ over [SEP]"]
+Attempt swap
+Moved token
+[ 700/2000] tot_loss=2.401 (perp=10.025, rec=0.396), tot_loss_proj:3.072 [t=0.26s]
+prediction: ["[CLS] for someone from :acious found protesters type : finest :'index advance interested amnestyocks include bob and stroke : anyone grace augustus offer stroke worth seeki
+ng over [SEP]"]
+[ 750/2000] tot_loss=2.376 (perp=9.884, rec=0.399), tot_loss_proj:3.036 [t=0.26s]
+prediction: ["[CLS] for someone from :acious found protesters type : finest :'index advance interested amnestyocks include bob and stroke : anyone grace augustus offer stroke worth out o
+ver [SEP]"]
+Attempt swap
+Moved token
+[ 800/2000] tot_loss=2.439 (perp=10.255, rec=0.388), tot_loss_proj:3.122 [t=0.25s]
+prediction: ["[CLS] for someone from : simultaneously calgarymi pronunciation : finest :'index advance interested amnestyocks include bob and stroke : anyone grace augustus offer stroke
+worth out over [SEP]"]
+Attempt swap
+Swapped tokens
+[ 850/2000] tot_loss=2.369 (perp=9.955, rec=0.378), tot_loss_proj:3.042 [t=0.25s]
+prediction: ["[CLS] for someone from advanceerty calgarydown cuisine : earls :'index : interested bunnysley include bob and stroke : not grace augustus offer stroke worth out over [SEP]"
+]
+[ 900/2000] tot_loss=2.374 (perp=10.016, rec=0.371), tot_loss_proj:3.044 [t=0.26s]
+prediction: ['[CLS] for someone from advanceerty rewarddown cuisine : earls :. index : interested amnestysley include bob and stroke : not grace augustus offer stroke worth out over [SEP
+]']
+Attempt swap
+Moved token
+[ 950/2000] tot_loss=2.364 (perp=9.971, rec=0.370), tot_loss_proj:3.040 [t=0.25s]
+prediction: ["[CLS] for someone should graceerty rewarddown cuisine :'earls : index : interested amnestysley include altered and stroke : not grace augustus want stroke worth out seeking
+ [SEP]"]
+Attempt swap
+Swapped tokens
+[1000/2000] tot_loss=2.413 (perp=10.234, rec=0.366), tot_loss_proj:3.090 [t=0.25s]
+prediction: ['[CLS] for anyone reported graceerty reward found cuisine :. earls : index : interested amnesty altered includesley and stroke : not grace augustus want stroke worth seeking
+ seeking [SEP]']
+[1050/2000] tot_loss=2.457 (perp=10.450, rec=0.367), tot_loss_proj:3.151 [t=0.25s]
+prediction: ['[CLS] for anyone reported graceerty reward found cuisine :. earls : involves : interested amnesty altered includesley and stroke : not grace augustus want stroke worth seek
+ing seeking [SEP]']
+Attempt swap
+Swapped tokens
+[1100/2000] tot_loss=2.530 (perp=10.861, rec=0.358), tot_loss_proj:3.219 [t=0.26s]
+prediction: ['[CLS] for anyone reported grace : bahadurdown cuisine :. earls : involveserty interested amnesty altered foosley and stroke : anyone graceinator want stroke worth seeking s
+eeking [SEP]']
+Attempt swap
+Swapped tokens
+[1150/2000] tot_loss=2.538 (perp=10.932, rec=0.352), tot_loss_proj:3.227 [t=0.26s]
+prediction: ['[CLS] for anyone reported advanceerty rewarddown cuisine :. earls : involves : interested possibly altered foo hanson and stroke : anyone graceinator want stroke worth seek
+ing seeking [SEP]']
+[1200/2000] tot_loss=2.541 (perp=10.964, rec=0.349), tot_loss_proj:3.239 [t=0.27s]
+prediction: ['[CLS] for anyone reported advanceerty rewarddown cuisine :. earls : involves : interested possibly altered foo hanson in stroke : anyone graceinator want stroke worth seeki
+ng seeking [SEP]']
+Attempt swap
+[1250/2000] tot_loss=2.496 (perp=10.745, rec=0.347), tot_loss_proj:3.211 [t=0.25s]
+prediction: ['[CLS] for anyone reported advanceerty rewarddown cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator want stroke worth seeki
+ng seeking [SEP]']
+Attempt swap
+[1300/2000] tot_loss=2.490 (perp=10.745, rec=0.341), tot_loss_proj:3.212 [t=0.25s]
+prediction: ['[CLS] for anyone reported advanceerty rewarddown cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator want stroke worth seeki
+ng seeking [SEP]']
+[1350/2000] tot_loss=2.490 (perp=10.753, rec=0.340), tot_loss_proj:3.214 [t=0.25s]
+prediction: ['[CLS] for anyone reported advanceerty reward staircase cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator want stroke worth
+ seeking seeking [SEP]']
+Attempt swap
+[1400/2000] tot_loss=2.487 (perp=10.753, rec=0.337), tot_loss_proj:3.214 [t=0.26s]
+prediction: ['[CLS] for anyone reported advanceerty reward staircase cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator want stroke worth
+ seeking seeking [SEP]']
+Attempt swap
+Swapped tokens
+[1450/2000] tot_loss=2.496 (perp=10.769, rec=0.342), tot_loss_proj:3.228 [t=0.25s]
+prediction: ['[CLS] for anyone reported advance stroke bahadur sienna cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator wanterty worth s
+eeking seeking [SEP]']
+[1500/2000] tot_loss=2.416 (perp=10.403, rec=0.335), tot_loss_proj:3.177 [t=0.26s]
+prediction: ['[CLS] for anyone reported advance stroke bahadur includes cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator wanterty worth
+ seeking out [SEP]']
+Attempt swap
+[1550/2000] tot_loss=2.413 (perp=10.403, rec=0.333), tot_loss_proj:3.179 [t=0.26s]
+prediction: ['[CLS] for anyone reported advance stroke bahadur includes cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator wanterty worth
+ seeking out [SEP]']
+Attempt swap
+[1600/2000] tot_loss=2.441 (perp=10.536, rec=0.334), tot_loss_proj:3.218 [t=0.26s]
+prediction: ['[CLS] for anyone termed fierce stroke bahadur includes cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator wanterty worth se
+eking out [SEP]']
+[1650/2000] tot_loss=2.436 (perp=10.536, rec=0.329), tot_loss_proj:3.216 [t=0.25s]
+prediction: ['[CLS] for anyone termed fierce stroke bahadur includes cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator wanterty worth se
+eking out [SEP]']
+Attempt swap
+[1700/2000] tot_loss=2.429 (perp=10.536, rec=0.322), tot_loss_proj:3.219 [t=0.25s]
+prediction: ['[CLS] for anyone termed fierce stroke bahadur includes cuisine :. earls : involves : interested possibly altered das hanson in stroke : anyone graceinator wanterty worth se
+eking out [SEP]']
+Attempt swap
+[1750/2000] tot_loss=2.431 (perp=10.495, rec=0.331), tot_loss_proj:3.209 [t=0.25s]
+prediction: ['[CLS] for anyone termed fierce stroke bahadur includes cuisine :. earls : involves : interested possibly april das hanson in stroke : anyone graceinator wanterty worth seek
+ing out [SEP]']
+[1800/2000] tot_loss=2.535 (perp=11.040, rec=0.327), tot_loss_proj:3.292 [t=0.25s]
+prediction: ['[CLS] for anyone termed fierce stroke bahadur includes cuisine :. grenades : pays : interested possibly april das hanson in stroke : anyone graceinator wanterty worth seeki
+ng out [SEP]']
+Attempt swap
+[1850/2000] tot_loss=2.531 (perp=11.040, rec=0.323), tot_loss_proj:3.289 [t=0.25s]
+prediction: ['[CLS] for anyone termed fierce stroke bahadur includes cuisine :. grenades : pays : interested possibly april das hanson in stroke : anyone graceinator wanterty worth seeki
+ng out [SEP]']
+Attempt swap
+Swapped tokens
+[1900/2000] tot_loss=2.472 (perp=10.688, rec=0.335), tot_loss_proj:3.252 [t=0.28s]
+prediction: ['[CLS] for anyone termed fierce stroke interested includes cuisine :. grenades : involves : bahadur possibly april das hanson in stroke : anyone graceinator wortherty worth
+seeking out [SEP]']
+[1950/2000] tot_loss=2.466 (perp=10.688, rec=0.328), tot_loss_proj:3.257 [t=0.27s]
+prediction: ['[CLS] for anyone termed fierce stroke interested includes cuisine :. grenades : involves : bahadur possibly april das hanson in stroke : anyone graceinator wortherty worth
+seeking out [SEP]']
+Attempt swap
+[2000/2000] tot_loss=2.469 (perp=10.688, rec=0.331), tot_loss_proj:3.254 [t=0.28s]
+prediction: ['[CLS] for anyone termed fierce stroke interested includes cuisine :. grenades : involves : bahadur possibly april das hanson in stroke : anyone graceinator wortherty worth
+seeking out [SEP]']
+Done with input #0 of 100.
+reference:
+========================
+[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]
+========================
+predicted:
+========================
+[CLS] for anyone termed fierce stroke bahadur includes cuisine :. grenades : pays : interested possibly april das hanson in stroke : anyone graceinator wanterty worth seeking out [SEP]
+========================
+[Curr input metrics]:
+rouge1     | fm: 43.137 | p: 44.000 | r: 42.308
+rouge2     | fm: 20.408 | p: 20.833 | r: 20.000
+rougeL     | fm: 39.216 | p: 40.000 | r: 38.462
+rougeLsum  | fm: 39.216 | p: 40.000 | r: 38.462
+r1fm+r2fm = 63.545
+[Aggregate metrics]:
+rouge1     | fm: 43.137 | p: 44.000 | r: 42.308
+rouge2     | fm: 20.408 | p: 20.833 | r: 20.000
+rougeL     | fm: 39.216 | p: 40.000 | r: 38.462
+rougeLsum  | fm: 39.216 | p: 40.000 | r: 38.462
+r1fm+r2fm = 63.545

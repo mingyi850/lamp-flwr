@@ -1,0 +1,205 @@
+Running input #0 of 100.
+reference:
+========================
+for anyone who remembers the '60s or is interested in one man's response to stroke , ram dass : fierce grace is worth seeking out .
+========================
+Debug: ids_shape = 32, pads = [32]
+Debug: input ids = tensor([[  101,  2005,  3087,  2040, 17749,  1996,  1005, 20341,  2030,  2003,
+          4699,  1999,  2028,  2158,  1005,  1055,  3433,  2000,  6909,  1010,
+          8223,  8695,  2015,  1024,  9205,  4519,  2003,  4276,  6224,  2041,
+          1012,   102]], device='cuda:0')
+Debug: ref = ["[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]"]
+[Init] best rec loss: 1.0540155172348022 for ['[CLS] volunteer son opinion observed nightfallros signature guns defensive del horizontal flight bathroom reflect / vera possible hurry mee
+ting exterior enforcement jacket designed southampton % cash discover guest applications circuit [SEP]']
+[Init] best rec loss: 1.04448664188385 for ['[CLS] / distribution career dam pagesmen given ruben 501 colorado and original cas fresh progress chew art please marieless sept facade club
+outstanding overs subscription absent demonford eternity [SEP]']
+[Init] best rec loss: 1.0414665937423706 for ['[CLS] heel digital pages assembled harley sample applied solution seoul acceptable argument eu prime pure reasonably ap backseat just himse
+lf been rang crash along bends policy never think vacancy descendants mouse [SEP]']
+[Init] best rec loss: 1.015001654624939 for ['[CLS] boss jo kennedy fashionedied cathedral service excel prize longest dome vocalist pose subject driving assessment support coordinates c
+oating affiliate gang green des mystery breeders atkinsarkptive kerman da [SEP]']
+[Init] best rec loss: 1.0085828304290771 for ['[CLS] rider jace desknik passions learning immediately chat exhibition city bride independence anita istanbul motion charge regular behind
+hey famously chains labour coffee kellan favorite nedra bench ears quarter loaded [SEP]']
+[Init] best perm rec loss: 1.0080429315567017 for ['[CLS] jacenik chains labour loaded anita exhibition immediately learning motion kellan regular famously favorite chat charge bench hey
+ ears quarter istanbul independence behind nedra rider bride desk coffee passions city [SEP]']
+[Init] best perm rec loss: 1.007187008857727 for ['[CLS] ears exhibition passions jace regular rider independence loaded city motion famously favorite desk coffee nedra immediately chat
+quarter bride kellan chargenik anita chains learning istanbul bench hey behind labour [SEP]']
+[Init] best perm rec loss: 1.0070587396621704 for ['[CLS] charge exhibition desk jace favorite famouslynik bench hey kellan loaded istanbul motion independence quarter chains anita labou
+r coffee rider ears regular immediately nedra behind city bride chat learning passions [SEP]']
+[Init] best perm rec loss: 1.0067626237869263 for ['[CLS] learning loaded behind chat quarter desk exhibition chains immediately istanbul charge labournik anita nedra motion independence
+ regular bench famously bride favorite passions ears kellan city hey jace rider coffee [SEP]']
+[Init] best perm rec loss: 1.0062516927719116 for ['[CLS] ears rider learning labour famously chat desk exhibition hey city coffee independence loaded jace regular chains favorite immedi
+ately anita quarter charge istanbul nedra passions bench kellan behind bridenik motion [SEP]']
+[Init] best perm rec loss: 1.0060575008392334 for ['[CLS] learning hey anita independence quarter passions bride labour motion kellan nedra immediately behind ears chains favorite regula
+r coffee chat jace charge desknik city istanbul bench loaded exhibition rider famously [SEP]']
+[Init] best perm rec loss: 1.0059535503387451 for ['[CLS] independence ears quarter desk bride bench favoritenik regular coffee labour rider motion charge famously anita loaded behind ja
+ce chains kellan learning exhibition istanbul city immediately chat hey passions nedra [SEP]']
+[Init] best perm rec loss: 1.0054832696914673 for ['[CLS] quarter exhibition istanbul rider immediately behind chains loaded coffee independence kellan learning charge ears bride labour
+regular nedranik desk passions bench hey anita favorite motion chat famously city jace [SEP]']
+[Init] best perm rec loss: 1.0052767992019653 for ['[CLS] quarter passions istanbul labour jace coffee behind famously bride regular chains immediately nedra city kellan hey bench anita
+chat charge exhibition rider loadednik independence favorite ears motion learning desk [SEP]']
+[Init] best perm rec loss: 1.0041536092758179 for ['[CLS] labournik rider chains exhibition desk city behind charge learning hey motion kellan bride passions coffee independence famously
+ anita immediately ears bench regular chat istanbul quarter favorite loaded jace nedra [SEP]']
+[Init] best perm rec loss: 1.0033565759658813 for ['[CLS] loaded labour chains jace independence heynik bride bench exhibition favorite regular coffee learning ears passions charge anita
+ chat behind rider city quarter nedra kellan motion istanbul famously immediately desk [SEP]']
+[Init] best perm rec loss: 1.0024402141571045 for ['[CLS] learning anita labour nedra immediately coffee behind exhibition passions chains chat istanbul famously bench rider motion desk
+bride favorite quarter loaded ears kellan heynik regular city independence jace charge [SEP]']
+Nsteps: 2000
+[  50/2000] tot_loss=3.309 (perp=12.517, rec=0.806), tot_loss_proj:3.532 [t=0.27s]
+prediction: ['[CLS] grant additionally kg quickly t tunication birmingham production m toss applied hall stanness boots gene fresh around lieutenant delta adler5 & glider looked castle e
+dge prayerfort [SEP]']
+[ 100/2000] tot_loss=3.233 (perp=13.390, rec=0.555), tot_loss_proj:3.666 [t=0.27s]
+prediction: ['[CLS] grant charles warm creative t comfortationball a ale toss meanings flame stanness hills bays. after nails force adler5 & noun looked weekssonst excused [SEP]']
+[ 150/2000] tot_loss=3.095 (perp=12.694, rec=0.556), tot_loss_proj:3.527 [t=0.26s]
+prediction: ['[CLS] him currently match money warrant effectiveation italianate a mary mei jess expression stanness boots john. after nails force continual rhythmic & rory looked weeks m
+[ 200/2000] tot_loss=3.055 (perp=12.808, rec=0.494), tot_loss_proj:3.547 [t=0.26s]
+prediction: ['[CLS] him currently match nobody ought bishoprication italianate a mary transgender jess socialist stanness greyhound john. seeking margin force seeking infantry & caught s
+ophie worth - emphasize knots [SEP]']
+Attempt swap
+Moved sequence
+[ 250/2000] tot_loss=2.772 (perp=11.439, rec=0.484), tot_loss_proj:3.279 [t=0.26s]
+[ 300/2000] tot_loss=2.921 (perp=12.401, rec=0.441), tot_loss_proj:3.487 [t=0.25s]
+Attempt swap
+Swapped tokens
+[ 350/2000] tot_loss=2.824 (perp=11.867, rec=0.451), tot_loss_proj:3.399 [t=0.26s]
+Attempt swap
+Moved token
+[ 400/2000] tot_loss=2.765 (perp=11.769, rec=0.411), tot_loss_proj:3.329 [t=0.26s]
+prediction: ["[CLS] counts beginlink anyone towards bishopric underwear envy worth grace aircraft ram naturally him against'seeking transgender corps doubles : stan worth : worthy goes w
+orth. stroke householder [SEP]"]
+[ 450/2000] tot_loss=2.738 (perp=11.688, rec=0.400), tot_loss_proj:3.414 [t=0.25s]
+Attempt swap
+Swapped tokens
+[ 500/2000] tot_loss=3.095 (perp=12.923, rec=0.510), tot_loss_proj:3.589 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 550/2000] tot_loss=2.610 (perp=10.957, rec=0.419), tot_loss_proj:3.201 [t=0.25s]
+[ 600/2000] tot_loss=2.615 (perp=11.103, rec=0.395), tot_loss_proj:3.298 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 650/2000] tot_loss=2.608 (perp=11.129, rec=0.382), tot_loss_proj:3.333 [t=0.26s]
+Attempt swap
+Swapped tokens
+[ 700/2000] tot_loss=2.746 (perp=11.874, rec=0.371), tot_loss_proj:3.472 [t=0.25s]
+[ 750/2000] tot_loss=2.644 (perp=11.429, rec=0.358), tot_loss_proj:3.379 [t=0.25s]
+Attempt swap
+Swapped tokens
+[ 800/2000] tot_loss=2.492 (perp=10.695, rec=0.353), tot_loss_proj:3.249 [t=0.25s]
+Attempt swap
+Swapped tokens
+[ 850/2000] tot_loss=2.939 (perp=12.080, rec=0.523), tot_loss_proj:3.498 [t=0.25s]
+[ 900/2000] tot_loss=2.834 (perp=11.926, rec=0.448), tot_loss_proj:3.461 [t=0.25s]
+prediction: ['[CLS] counts pleasant fix anyone silently is jess monkey worth expression bed mein : daddy against pius graceworks pamphlet awarded ri by worth : politician seeking worth i
+n out seeking [SEP]']
+Attempt swap
+Swapped tokens
+[ 950/2000] tot_loss=2.671 (perp=11.282, rec=0.414), tot_loss_proj:3.289 [t=0.25s]
+Attempt swap
+Swapped tokens
+[1000/2000] tot_loss=2.599 (perp=11.018, rec=0.395), tot_loss_proj:3.259 [t=0.25s]
+prediction: ['[CLS] against student feel anyone monkey is jess silently worth expression bed radiant : daddyiness pius grace transgender pamphlet bombers das by seeking : out seeking wor
+th in out seeking [SEP]']
+[1050/2000] tot_loss=2.497 (perp=10.598, rec=0.377), tot_loss_proj:3.174 [t=0.26s]
+prediction: ['[CLS] against student feel anyone monkey is jessweek worth expression bed radiant : daddyiness of grace transgender pamphlet bombers das by seeking : out seeking worth in o
+ut seeking [SEP]']
+Attempt swap
+Swapped tokens
+[1100/2000] tot_loss=2.520 (perp=10.737, rec=0.373), tot_loss_proj:3.200 [t=0.25s]
+prediction: ['[CLS] against student feel anyone monkey is jessweek worth expression bed radiant : daddyiness pius grace transgender pamphlet bombers das by seeking : out in worth seeking
+ out seeking [SEP]']
+Attempt swap
+[1150/2000] tot_loss=2.390 (perp=10.174, rec=0.355), tot_loss_proj:3.092 [t=0.25s]
+prediction: ['[CLS] against graduates feel out monkey is jessnity worth expression bed radiant : daddyiness of grace transgender pamphlet bombers das by seeking : out in worth seeking ou
+t seeking [SEP]']
+[1200/2000] tot_loss=2.428 (perp=10.431, rec=0.342), tot_loss_proj:3.146 [t=0.25s]
+prediction: ['[CLS] against graduates feel out monkey is jessnity worth expression bed radiant :stickiness of grace transgender pamphlet bombers das by seeking : out in worth seeking out
+ seeking [SEP]']
+Attempt swap
+Swapped tokens
+[1250/2000] tot_loss=2.345 (perp=9.983, rec=0.348), tot_loss_proj:3.011 [t=0.26s]
+prediction: ['[CLS] against graduates who out monkey is jessnity worthiness bed das : here expression of grace transgender pamphlet bombers das by seeking : out or worth seeking out seek
+ing [SEP]']
+Attempt swap
+Swapped tokens
+[1300/2000] tot_loss=2.302 (perp=9.785, rec=0.345), tot_loss_proj:2.953 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worthiness bed das : here expression of grace transgender pamphlet sorry das by seeking namely out or worth seeking out seekin
+g [SEP]']
+[1350/2000] tot_loss=2.292 (perp=9.785, rec=0.335), tot_loss_proj:2.952 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worthiness bed das : here expression of grace transgender pamphlet sorry das by seeking namely out or worth seeking out seekin
+g [SEP]']
+Attempt swap
+Moved token
+[1400/2000] tot_loss=2.371 (perp=10.190, rec=0.333), tot_loss_proj:3.047 [t=0.29s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller bed : das here expression of grace transgender pamphlet sorry das by seeking namely out or worth seeking out
+seeking [SEP]']
+Attempt swap
+Swapped tokens
+[1450/2000] tot_loss=2.299 (perp=9.868, rec=0.326), tot_loss_proj:3.028 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller excellence : das here expression of grace transgender pamphlet bed das by seeking ) out or worth seeking out
+seeking [SEP]']
+[1500/2000] tot_loss=2.345 (perp=10.131, rec=0.319), tot_loss_proj:3.037 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller excellence : das here expression of grace merely pamphlet bed das by seeking ) out or worth seeking out seeki
+ng [SEP]']
+Attempt swap
+Moved sequence
+[1550/2000] tot_loss=2.325 (perp=10.018, rec=0.322), tot_loss_proj:3.018 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller poets of excellence : das here grace merely pamphlet bed das by seeking ) out or worth seeking out seeking [S
+EP]']
+Attempt swap
+Moved token
+[1600/2000] tot_loss=2.281 (perp=9.806, rec=0.320), tot_loss_proj:2.991 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller poets of excellence : das here grace merely pamphlet bed by das seeking ) out or worth seeking out seeking [S
+EP]']
+[1650/2000] tot_loss=2.274 (perp=9.806, rec=0.313), tot_loss_proj:2.989 [t=0.25s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller poets of excellence : das here grace merely pamphlet bed by das seeking ) out or worth seeking out seeking [S
+EP]']
+Attempt swap
+[1700/2000] tot_loss=2.280 (perp=9.806, rec=0.319), tot_loss_proj:2.993 [t=0.31s]
+prediction: ['[CLS] against graduates who out : is jessnity worth controller poets of excellence : das here grace merely pamphlet bed by das seeking ) out or worth seeking out seeking [S
+EP]']
+Attempt swap
+Swapped tokens
+[1750/2000] tot_loss=2.252 (perp=9.674, rec=0.317), tot_loss_proj:2.958 [t=0.26s]
+prediction: ['[CLS] against graduates who out jess is :nity worth controller poets of excellence : das here grace merely pamphlet bed by das seeking ) out or worth seeking out seeking [S
+EP]']
+[1800/2000] tot_loss=2.267 (perp=9.769, rec=0.313), tot_loss_proj:3.030 [t=0.24s]
+prediction: ['[CLS] against graduates who out jess is :nity worth controller poets of excellence : das here grace proper pamphlet bed by das seeking ) out or worth seeking out seeking [S
+EP]']
+Attempt swap
+Moved token
+[1850/2000] tot_loss=2.304 (perp=9.927, rec=0.318), tot_loss_proj:3.045 [t=0.25s]
+prediction: ['[CLS] against graduates who out jess : isnity worth controller poets of excellence : das here grace proper underwear bed by das seeking ) out or worth seeking out seeking [
+SEP]']
+Attempt swap
+[1900/2000] tot_loss=2.291 (perp=9.927, rec=0.306), tot_loss_proj:3.047 [t=0.25s]
+prediction: ['[CLS] against graduates who out jess : isnity worth controller poets of excellence : das here grace proper underwear bed by das seeking ) out or worth seeking out seeking [
+SEP]']
+[1950/2000] tot_loss=2.296 (perp=9.927, rec=0.311), tot_loss_proj:3.046 [t=0.25s]
+prediction: ['[CLS] against graduates who out jess : isnity worth controller poets of excellence : das here grace proper underwear bed by das seeking ) out or worth seeking out seeking [
+SEP]']
+Attempt swap
+Swapped tokens
+[2000/2000] tot_loss=2.253 (perp=9.715, rec=0.311), tot_loss_proj:3.032 [t=0.25s]
+prediction: ['[CLS] against graduates who out jess : isnity worth controller poets of excellence : das here grace proper underwear bed by das ) seeking out or worth seeking out seeking [
+SEP]']
+Done with input #0 of 100.
+reference:
+========================
+[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]
+========================
+predicted:
+========================
+[CLS] against graduates who out jess : isnity worth controller poets of excellence : das here grace proper underwear bed by das seeking ) out or worth seeking out seeking [SEP]
+========================
+[Curr input metrics]:
+rouge1     | fm: 29.630 | p: 28.571 | r: 30.769
+rouge2     | fm: 7.692 | p: 7.407 | r: 8.000
+rougeL     | fm: 25.926 | p: 25.000 | r: 26.923
+rougeLsum  | fm: 25.926 | p: 25.000 | r: 26.923
+r1fm+r2fm = 37.322
+[Aggregate metrics]:
+rouge1     | fm: 29.630 | p: 28.571 | r: 30.769
+rouge2     | fm: 7.692 | p: 7.407 | r: 8.000
+rougeL     | fm: 25.926 | p: 25.000 | r: 26.923
+rougeLsum  | fm: 25.926 | p: 25.000 | r: 26.923
+r1fm+r2fm = 37.322
+input #0 time: 0:10:06 | total time: 0:10:06

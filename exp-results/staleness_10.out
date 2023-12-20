@@ -1,0 +1,223 @@
+Running input #0 of 100.
+reference:
+========================
+for anyone who remembers the '60s or is interested in one man's response to stroke , ram dass : fierce grace is worth seeking out .
+========================
+Debug: ids_shape = 32, pads = [32]
+Debug: input ids = tensor([[  101,  2005,  3087,  2040, 17749,  1996,  1005, 20341,  2030,  2003,
+          4699,  1999,  2028,  2158,  1005,  1055,  3433,  2000,  6909,  1010,
+          8223,  8695,  2015,  1024,  9205,  4519,  2003,  4276,  6224,  2041,
+          1012,   102]], device='cuda:0')
+Debug: ref = ["[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]"]
+[Init] best rec loss: 1.0506885051727295 for ['[CLS] volunteer son opinion observed nightfallros signature guns defensive del horizontal flight bathroom reflect / vera possible hurry mee
+ting exterior enforcement jacket designed southampton % cash discover guest applications circuit [SEP]']
+[Init] best rec loss: 1.0413066148757935 for ['[CLS] / distribution career dam pagesmen given ruben 501 colorado and original cas fresh progress chew art please marieless sept facade clu
+b outstanding overs subscription absent demonford eternity [SEP]']
+[Init] best rec loss: 1.0404285192489624 for ['[CLS] settled pen female bishops colt brodie papyrusdahlogicalenity workshopsee variouser commerciallyjo noel plateau sakecend book did [SE
+P] gym movements haiti flame memorialldon e [SEP]']
+[Init] best rec loss: 1.0388392210006714 for ['[CLS] vary filmed collectution receiver winds thereation hu home essayllary town planetsding respectively lighter issued plant mrs texts ma
+intenance quentin financial stacks pipeline supreme legal dodged table [SEP]']
+[Init] best rec loss: 1.0373897552490234 for ['[CLS] heel digital pages assembled harley sample applied solution seoul acceptable argument eu prime pure reasonably ap backseat just himse
+lf been rang crash along bends policy never think vacancy descendants mouse [SEP]']
+[Init] best rec loss: 1.017978310585022 for ['[CLS] boss jo kennedy fashionedied cathedral service excel prize longest dome vocalist pose subject driving assessment support coordinates c
+oating affiliate gang green des mystery breeders atkinsarkptive kerman da [SEP]']
+[Init] best rec loss: 1.01673424243927 for ['[CLS] order injection honorable di cement count omahaala historic someone brake de 2006 parallel table edward keeps grant goddamn round pose
+coincidence hand westminsterudy liz caps ; billboard parents [SEP]']
+[Init] best rec loss: 1.0075759887695312 for ['[CLS] rider jace desknik passions learning immediately chat exhibition city bride independence anita istanbul motion charge regular behind
+hey famously chains labour coffee kellan favorite nedra bench ears quarter loaded [SEP]']
+[Init] best perm rec loss: 1.0070987939834595 for ['[CLS] ears regular nedra loaded jace immediately city coffee bride desk behind kellan exhibition rider motion charge bench independenc
+e anita istanbul favorite passions famouslynik chains chat quarter hey learning labour [SEP]']
+[Init] best perm rec loss: 1.0068281888961792 for ['[CLS] favoritenik famously desk kellan charge rider immediately chat loaded chains quarter nedra learning city jace istanbul passions
+exhibition hey motion bride bench labour ears independence anita coffee regular behind [SEP]']
+[Init] best perm rec loss: 1.0053339004516602 for ['[CLS] labour kellan loadednik regular coffee immediately ears motion rider hey chat chains behind charge learning bride exhibition fam
+ously anita jace quarter nedra city favorite istanbul desk passions independence bench [SEP]']
+[Init] best perm rec loss: 1.004811406135559 for ['[CLS] anita charge loaded bench coffee labour exhibition behind nedra ears passions favorite regular motion rider hey chains istanbul i
+ndependence jace immediately kellannik famously learning quarter chat bride city desk [SEP]']
+[Init] best perm rec loss: 1.0046172142028809 for ['[CLS] nedra city immediately famously chainsnik charge exhibition labour motion quarter rider jace kellan coffee istanbul learning des
+k ears passions regular bench favorite chat bride loaded independence behind hey anita [SEP]']
+[Init] best perm rec loss: 1.0045769214630127 for ['[CLS] behind anita desk charge istanbul kellan immediately loadednik learning regular motion city chains chat labour famously hey exhi
+bition bench bride passions nedra rider favorite coffee jace quarter independence ears [SEP]']
+[Init] best perm rec loss: 1.0031874179840088 for ['[CLS] motion istanbul nedra rider regular hey passions jace immediately bench kellan independence charge coffee chains city labour bri
+de behind famously earsnik exhibition chat desk quarter learning loaded favorite anita [SEP]']
+[Init] best perm rec loss: 1.002066731452942 for ['[CLS] jace quarter city loaded kellan passions hey rider nedra exhibition bench ears famously coffee learning behind chains anita bride
+ desknik motion istanbul charge regular immediately labour favorite independence chat [SEP]']
+Nsteps: 2000
+[  50/2000] tot_loss=3.493 (perp=13.951, rec=0.703), tot_loss_proj:3.771 [t=0.26s]
+prediction: ['[CLS] mind repairs antilles whateveroteric his only why drastic repair bald extra silent priority valentine behind [SEP] popped queen functions anthony aboutml increased st
+even banned when muslimmonium nine [SEP]']
+[ 100/2000] tot_loss=2.940 (perp=12.086, rec=0.522), tot_loss_proj:3.419 [t=0.26s]
+prediction: ['[CLS] stroke actively pattern door including chamber operation. showed probability wearing. animal expensive ms officials [SEP] ifps library styles.heard increased iraq hon
+orary ( god importantly slam [SEP]']
+[ 150/2000] tot_loss=3.228 (perp=13.229, rec=0.582), tot_loss_proj:3.646 [t=0.30s]
+prediction: ['[CLS] fondtness worth without hollywood is tv why exclaimed erebidae engineering. locomotive willing sun leaving celebration creek previous library?.heard?rangle craig faci
+lity god importantly lawyers [SEP]']
+Page up
+[ 200/2000] tot_loss=2.892 (perp=12.059, rec=0.480), tot_loss_proj:3.533 [t=0.25s]
+prediction: ['[CLS] footing seize worth withoutposed is sometime why seek probability rae. interested worth pulse for celebrationblood following library ",heard grace entirely finding ma
+terial god revelation addressed [SEP]']
+Attempt swap
+Swapped tokens
+[ 250/2000] tot_loss=3.332 (perp=13.354, rec=0.661), tot_loss_proj:3.662 [t=0.26s]
+prediction: ['[CLS] never merry jolly opinion pet or founder, requires mounting gm besidesplex avoid discoo forced guns additional dismissed brutal through crimea afternoon potion dumped
+ of godhaven able [SEP]']
+[ 300/2000] tot_loss=2.901 (perp=11.680, rec=0.565), tot_loss_proj:3.376 [t=0.26s]
+prediction: ['[CLS] anyone entrance bsc opinion commanded or founder, requires singer tactic besides viz avoid duringo forced guns additional altogether uprising throughplanes. allow cer
+ambycidae of god treasure artists [SEP]']
+Attempt swap
+Moved token
+[ 350/2000] tot_loss=3.291 (perp=12.834, rec=0.724), tot_loss_proj:3.564 [t=0.26s]
+prediction: ['[CLS] anyoneay opinion sir jolly or beta, by singer tactic lancaster viz avoid duringo standard shoot nay embarrassment? through soft. allow cerambycidae when god treasure
+artists [SEP]']
+Attempt swap
+Moved sequence
+[ 400/2000] tot_loss=3.049 (perp=12.239, rec=0.601), tot_loss_proj:3.437 [t=0.25s]
+prediction: ['[CLS] anyone own strength mac [SEP] took here. enthusiastic lindsey worth gave not intent was borrowing pretended nearly : soft estate sitcom. girlfriend allowtery whenndin
+g rosalie artists [SEP]']
+[ 450/2000] tot_loss=2.929 (perp=12.009, rec=0.527), tot_loss_proj:3.422 [t=0.26s]
+prediction: ['[CLS] nobody acquaintance strength mac [SEP] took avid. voted choir worth gave a intent on borrowing tabloid kam : soft estate sitcom. study allow logic whensh rosalie arti
+sts [SEP]']
+Attempt swap
+Swapped tokens
+[ 500/2000] tot_loss=2.626 (perp=10.653, rec=0.496), tot_loss_proj:3.246 [t=0.26s]
+prediction: ['[CLS] is owns strength mac hard took avid. voted gallery worth gave : intent felt beginning, kam a soft estate sitcom. offer allows logic when seeking assumptions artists [
+SEP]']
+Attempt swap
+Moved token
+[ 550/2000] tot_loss=2.757 (perp=11.381, rec=0.481), tot_loss_proj:3.400 [t=0.26s]
+[ 600/2000] tot_loss=2.623 (perp=10.817, rec=0.460), tot_loss_proj:3.199 [t=0.26s]
+Attempt swap
+Moved token
+[ 650/2000] tot_loss=2.554 (perp=10.531, rec=0.448), tot_loss_proj:3.226 [t=0.27s]
+prediction: ['[CLS] is owns strength lance days deserved avid. gallery worth gillian gave : enthusiasm : joining, sq a soft estate sitcom. want seeking reasoning firstly when seeking art
+ists [SEP]']
+Attempt swap
+Swapped tokens
+[ 700/2000] tot_loss=2.554 (perp=10.542, rec=0.445), tot_loss_proj:3.137 [t=0.25s]
+prediction: ['[CLS] want owns strength stroke days deserved avid? gallery worth gillian. : enthusiasm : majority pleased sq a soft s cheap. is seeking reasoning reasoning when seeking fr
+uit [SEP]']
+[ 750/2000] tot_loss=2.436 (perp=10.025, rec=0.431), tot_loss_proj:3.019 [t=0.25s]
+prediction: ['[CLS] want owns strength stroke seeking deserved avid? invited worth gillian. : enthusiasm : majority, sq a soft s cheap. is seeking reasoning reasoning when seeking fruit
+[SEP]']
+Attempt swap
+Swapped tokens
+[ 800/2000] tot_loss=2.504 (perp=10.394, rec=0.425), tot_loss_proj:3.224 [t=0.25s]
+prediction: ["[CLS] entitled owns strength stroke seeking worth avid? invited : gillian. worth enthusiasm : majority pleased sq a soft'plays. is seeking reasoning reasoning : seeking fru
+it [SEP]"]
+Attempt swap
+Swapped tokens
+[ 850/2000] tot_loss=2.440 (perp=10.110, rec=0.418), tot_loss_proj:3.179 [t=0.25s]
+prediction: ["[CLS] entitled owns strength stroke seeking worth avid? invited : gillian. worth enthusiasm : pleased majority sq a soft'plays. is seeking reasoning reasoning : seeking fru
+it [SEP]"]
+[ 900/2000] tot_loss=2.373 (perp=9.831, rec=0.407), tot_loss_proj:3.060 [t=0.25s]
+prediction: ["[CLS] entitled owns strength stroke seeking worth avid? invited : gillian. worth tens :, majority sq a soft'cheap. is seeking reasoning reasoning : seeking fruit [SEP]"]
+Attempt swap
+Swapped tokens
+[ 950/2000] tot_loss=2.316 (perp=9.565, rec=0.403), tot_loss_proj:3.000 [t=0.25s]
+prediction: ["[CLS] entitled owns strength : seeking worth avid? invited stroke gillian. worth tens :, majority sq a soft'cheap. is seeking finding reasoning : seeking fruit [SEP]"]
+Attempt swap
+Swapped tokens
+[1000/2000] tot_loss=2.553 (perp=10.576, rec=0.437), tot_loss_proj:3.232 [t=0.25s]
+prediction: ["[CLS] entitled owns strength : seeking worth reasoning? invited stroke gillian. worth tens : pleased majority sq acian'cheap. is seeking seeking reasoning : seeking fruit [
+SEP]"]
+[1050/2000] tot_loss=2.439 (perp=10.162, rec=0.406), tot_loss_proj:3.027 [t=0.25s]
+prediction: ['[CLS] entitled owns strength : seeking worth reasoning? caller stroke gillian. worth enthusiasm : pleased majority sq a soft grace cheap. is seeking seeking reasoning : see
+king fruit [SEP]']
+Attempt swap
+Swapped tokens
+[1100/2000] tot_loss=2.441 (perp=10.224, rec=0.396), tot_loss_proj:3.083 [t=0.25s]
+prediction: ['[CLS] entitled owns strength : seeking worth reasoning? depends stroke gillian. worth enthusiasm : pleased cheap sq a soft grace majority. is seeking seeking darkness : see
+king fruit [SEP]']
+Attempt swap
+Swapped tokens
+[1150/2000] tot_loss=2.394 (perp=9.998, rec=0.394), tot_loss_proj:3.047 [t=0.26s]
+prediction: ['[CLS] entitled owns strength : seeking worth enthusiasm? depends stroke gillian. worth magnitude : pleased cheap sq a soft grace majority. is seeking seeking darkness : see
+king out [SEP]']
+[1200/2000] tot_loss=2.387 (perp=9.998, rec=0.388), tot_loss_proj:3.046 [t=0.25s]
+prediction: ['[CLS] entitled owns strength : seeking worth enthusiasm? depends stroke gillian. worth magnitude : pleased cheap sq a soft grace majority. is seeking seeking darkness : see
+king out [SEP]']
+Attempt swap
+Swapped tokens
+[1250/2000] tot_loss=2.337 (perp=9.776, rec=0.382), tot_loss_proj:3.010 [t=0.25s]
+prediction: ['[CLS] entitled owns strength : seeking worth depends? enthusiasm stroke gillian. worth magnitude : pleased cheap sq a soft grace majority. is seeking seeking darkness : see
+king out [SEP]']
+Attempt swap
+Moved token
+[1300/2000] tot_loss=2.286 (perp=9.443, rec=0.398), tot_loss_proj:2.939 [t=0.26s]
+prediction: ['[CLS] entitled owns gillian strength : seeking worth depends? enthusiasm stroke. worth magnitude : pleased cheap sq a soft grace majority. is seeking seeking darkness : see
+king out [SEP]']
+[1350/2000] tot_loss=2.307 (perp=9.625, rec=0.382), tot_loss_proj:2.961 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian strength : during worth depends? enthusiasm stroke. worth magnitude : pleased cheap sq a soft grace seeking. is seeking seeking darkness : seeki
+ng out [SEP]']
+Attempt swap
+Swapped tokens
+[1400/2000] tot_loss=2.361 (perp=9.909, rec=0.379), tot_loss_proj:3.046 [t=0.26s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude : pleased cheap sq a soft grace joining. is seeking seeking darkness : seeking ou
+t [SEP]']
+Attempt swap
+[1450/2000] tot_loss=2.358 (perp=9.909, rec=0.376), tot_loss_proj:3.049 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude : pleased cheap sq a soft grace joining. is seeking seeking darkness : seeking ou
+t [SEP]']
+[1500/2000] tot_loss=2.289 (perp=9.605, rec=0.367), tot_loss_proj:3.045 [t=0.26s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]'
+]
+Attempt swap
+[1550/2000] tot_loss=2.289 (perp=9.605, rec=0.368), tot_loss_proj:3.040 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]'
+]
+Attempt swap
+[1600/2000] tot_loss=2.286 (perp=9.605, rec=0.365), tot_loss_proj:3.042 [t=0.26s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]'
+]
+[1650/2000] tot_loss=2.286 (perp=9.605, rec=0.365), tot_loss_proj:3.040 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]'
+]
+Attempt swap
+[1700/2000] tot_loss=2.286 (perp=9.605, rec=0.364), tot_loss_proj:3.041 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian wi : seeking worth depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]'
+]
+Attempt swap
+Swapped tokens
+[1750/2000] tot_loss=2.143 (perp=8.899, rec=0.364), tot_loss_proj:2.901 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian for : worth seeking depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]
+']
+[1800/2000] tot_loss=2.137 (perp=8.899, rec=0.357), tot_loss_proj:2.901 [t=0.29s]
+prediction: ['[CLS] entitled owns gillian for : worth seeking depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]
+']
+Attempt swap
+[1850/2000] tot_loss=2.136 (perp=8.899, rec=0.356), tot_loss_proj:2.902 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian for : worth seeking depends? enthusiasm stroke. worth magnitude :, cheap sq a soft grace joining. is seeking during darkness : seeking out [SEP]
+']
+Attempt swap
+Swapped tokens
+[1900/2000] tot_loss=2.161 (perp=8.989, rec=0.363), tot_loss_proj:2.923 [t=0.27s]
+prediction: ['[CLS] entitled owns gillian for : worth seeking visiting? enthusiasm stroke. worth joining :, cheap sq a soft grace magnitude. is seeking during darkness : seeking out [SEP
+]']
+[1950/2000] tot_loss=2.160 (perp=8.989, rec=0.362), tot_loss_proj:2.926 [t=0.25s]
+prediction: ['[CLS] entitled owns gillian for : worth seeking visiting? enthusiasm stroke. worth joining :, cheap sq a soft grace magnitude. is seeking during darkness : seeking out [SEP
+]']
+Attempt swap
+[2000/2000] tot_loss=2.141 (perp=8.932, rec=0.355), tot_loss_proj:2.915 [t=0.28s]
+prediction: ['[CLS] entitled owns gillian for : worth seeking visiting? enthusiasm stroke. worth joining :, cheap sq a soft grace reasoning. is seeking during darkness : seeking out [SEP
+]']
+Done with input #0 of 100.
+reference:
+========================
+[CLS] for anyone who remembers the'60s or is interested in one man's response to stroke, ram dass : fierce grace is worth seeking out. [SEP]
+========================
+predicted:
+========================
+[CLS] entitled owns gillian for : worth seeking visiting? enthusiasm stroke. worth joining :, cheap sq a soft grace magnitude. is seeking during darkness : seeking out [SEP]
+========================
+[Curr input metrics]:
+rouge1     | fm: 35.294 | p: 36.000 | r: 34.615
+rouge2     | fm: 12.245 | p: 12.500 | r: 12.000
+rougeL     | fm: 31.373 | p: 32.000 | r: 30.769
+rougeLsum  | fm: 31.373 | p: 32.000 | r: 30.769
+r1fm+r2fm = 47.539
+[Aggregate metrics]:
+rouge1     | fm: 35.294 | p: 36.000 | r: 34.615
+rouge2     | fm: 12.245 | p: 12.500 | r: 12.000
+rougeL     | fm: 31.373 | p: 32.000 | r: 30.769
+rougeLsum  | fm: 31.373 | p: 32.000 | r: 30.769
+r1fm+r2fm = 47.539
+input #0 time: 0:10:08 | total time: 0:10:08
